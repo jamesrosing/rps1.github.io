@@ -1,0 +1,5284 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!doctype html>
+
+
+
+	<html lang="en">
+
+
+
+<head><script type="text/javascript">/* <![CDATA[ */_cf_loadingtexthtml="<img alt=' ' src='/cfscripts/ajax/resources/cf/images/loading.gif'/>";
+_cf_contextpath="";
+_cf_ajaxscriptsrc="/cfscripts/ajax";
+_cf_jsonprefix='//';
+_cf_clientid='3F60A61AD5F0E1380686028A17830D3A';/* ]]> */</script><script type="text/javascript" src="/cfscripts/ajax/messages/cfmessage.js"></script>
+<script type="text/javascript" src="/cfscripts/ajax/package/cfajax.js"></script>
+
+<script type="text/javascript">/* <![CDATA[ */
+	ColdFusion.Ajax.importTag('CFAJAXPROXY');
+/* ]]> */</script>
+
+<script type="text/javascript">/* <![CDATA[ */
+	var _cf_configs=ColdFusion.AjaxProxy.init('/configs.cfc','configObj');
+	_cf_configs.prototype.AddToCart=function(styleList,qtyList,thisRegion) { return ColdFusion.AjaxProxy.invoke(this, "AddToCart","61CEB7BDBBB5B89F82BCAE76A6BB17F46AC715B67B", {styleList:styleList,qtyList:qtyList,thisRegion:thisRegion});};
+	_cf_configs.prototype.crmAssetLog=function(assetid,profileid,crmid) { return ColdFusion.AjaxProxy.invoke(this, "crmAssetLog","61CEB7BDBBB5B89F82BCAE76A6BB17F46AC715B67B", {assetid:assetid,profileid:profileid,crmid:crmid});};
+	_cf_configs.prototype.AddToCartTopConfig=function(configid,sku,qty,img) { return ColdFusion.AjaxProxy.invoke(this, "AddToCartTopConfig","61CEB7BDBBB5B89F82BCAE76A6BB17F46AC715B67B", {configid:configid,sku:sku,qty:qty,img:img});};
+	_cf_configs.prototype.imageGen=function(sku,configid,angle,iwidth,iheight) { return ColdFusion.AjaxProxy.invoke(this, "imageGen","61CEB7BDBBB5B89F82BCAE76A6BB17F46AC715B67B", {sku:sku,configid:configid,angle:angle,iwidth:iwidth,iheight:iheight});};
+	_cf_configs.prototype.getDiscount=function(configID,StyleID) { return ColdFusion.AjaxProxy.invoke(this, "getDiscount","61CEB7BDBBB5B89F82BCAE76A6BB17F46AC715B67B", {configID:configID,StyleID:StyleID});};
+	_cf_configs.prototype.updateConfigMflex=function(configid,qty,addToCart,a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18,a19,a20,a21,noprice,thisRegion) { return ColdFusion.AjaxProxy.invoke(this, "updateConfigMflex","61CEB7BDBBB5B89F82BCAE76A6BB17F46AC715B67B", {configid:configid,qty:qty,addToCart:addToCart,a1:a1,a2:a2,a3:a3,a4:a4,a5:a5,a6:a6,a7:a7,a8:a8,a9:a9,a10:a10,a11:a11,a12:a12,a13:a13,a14:a14,a15:a15,a16:a16,a17:a17,a18:a18,a19:a19,a20:a20,a21:a21,noprice:noprice,thisRegion:thisRegion});};
+	_cf_configs.prototype.BuildColors=function(TextileSku,ColorAttribID,CurrentColor,Aval,thisRegion) { return ColdFusion.AjaxProxy.invoke(this, "BuildColors","61CEB7BDBBB5B89F82BCAE76A6BB17F46AC715B67B", {TextileSku:TextileSku,ColorAttribID:ColorAttribID,CurrentColor:CurrentColor,Aval:Aval,thisRegion:thisRegion});};
+	_cf_configs.prototype.setRefCode=function(refcode,employeeCode,refreshTarget,refreshURL) { return ColdFusion.AjaxProxy.invoke(this, "setRefCode","61CEB7BDBBB5B89F82BCAE76A6BB17F46AC715B67B", {refcode:refcode,employeeCode:employeeCode,refreshTarget:refreshTarget,refreshURL:refreshURL});};
+	_cf_configs.prototype.updateConfig=function(configid,qty,addToCart,a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18,a19,a20,a21,a22,a23,a24,a25,a26,a27,a28,a29,a30,noprice,thisRegion) { return ColdFusion.AjaxProxy.invoke(this, "updateConfig","61CEB7BDBBB5B89F82BCAE76A6BB17F46AC715B67B", {configid:configid,qty:qty,addToCart:addToCart,a1:a1,a2:a2,a3:a3,a4:a4,a5:a5,a6:a6,a7:a7,a8:a8,a9:a9,a10:a10,a11:a11,a12:a12,a13:a13,a14:a14,a15:a15,a16:a16,a17:a17,a18:a18,a19:a19,a20:a20,a21:a21,a22:a22,a23:a23,a24:a24,a25:a25,a26:a26,a27:a27,a28:a28,a29:a29,a30:a30,noprice:noprice,thisRegion:thisRegion});};
+	_cf_configs.prototype.loadConfig=function(skulookup,configid,thisRegion) { return ColdFusion.AjaxProxy.invoke(this, "loadConfig","61CEB7BDBBB5B89F82BCAE76A6BB17F46AC715B67B", {skulookup:skulookup,configid:configid,thisRegion:thisRegion});};
+	_cf_configs.prototype.CartAdd=function(styleList,configID,configsku,desc,msrp,yourprice,qty,qtyList,fullList,img,thisRegion,tlistprice) { return ColdFusion.AjaxProxy.invoke(this, "CartAdd","61CEB7BDBBB5B89F82BCAE76A6BB17F46AC715B67B", {styleList:styleList,configID:configID,configsku:configsku,desc:desc,msrp:msrp,yourprice:yourprice,qty:qty,qtyList:qtyList,fullList:fullList,img:img,thisRegion:thisRegion,tlistprice:tlistprice});};
+	_cf_configs.prototype.clearCart=function(cart) { return ColdFusion.AjaxProxy.invoke(this, "clearCart","61CEB7BDBBB5B89F82BCAE76A6BB17F46AC715B67B", {cart:cart});};
+/* ]]> */</script>
+
+<script type="text/javascript">/* <![CDATA[ */
+	var _cf_configs=ColdFusion.AjaxProxy.init('/configs.cfc','configObj');
+	_cf_configs.prototype.AddToCart=function(styleList,qtyList,thisRegion) { return ColdFusion.AjaxProxy.invoke(this, "AddToCart","61CEB7BDBBB5B89F82BCAE76A6BB17F46AC715B67B", {styleList:styleList,qtyList:qtyList,thisRegion:thisRegion});};
+	_cf_configs.prototype.crmAssetLog=function(assetid,profileid,crmid) { return ColdFusion.AjaxProxy.invoke(this, "crmAssetLog","61CEB7BDBBB5B89F82BCAE76A6BB17F46AC715B67B", {assetid:assetid,profileid:profileid,crmid:crmid});};
+	_cf_configs.prototype.AddToCartTopConfig=function(configid,sku,qty,img) { return ColdFusion.AjaxProxy.invoke(this, "AddToCartTopConfig","61CEB7BDBBB5B89F82BCAE76A6BB17F46AC715B67B", {configid:configid,sku:sku,qty:qty,img:img});};
+	_cf_configs.prototype.imageGen=function(sku,configid,angle,iwidth,iheight) { return ColdFusion.AjaxProxy.invoke(this, "imageGen","61CEB7BDBBB5B89F82BCAE76A6BB17F46AC715B67B", {sku:sku,configid:configid,angle:angle,iwidth:iwidth,iheight:iheight});};
+	_cf_configs.prototype.getDiscount=function(configID,StyleID) { return ColdFusion.AjaxProxy.invoke(this, "getDiscount","61CEB7BDBBB5B89F82BCAE76A6BB17F46AC715B67B", {configID:configID,StyleID:StyleID});};
+	_cf_configs.prototype.updateConfigMflex=function(configid,qty,addToCart,a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18,a19,a20,a21,noprice,thisRegion) { return ColdFusion.AjaxProxy.invoke(this, "updateConfigMflex","61CEB7BDBBB5B89F82BCAE76A6BB17F46AC715B67B", {configid:configid,qty:qty,addToCart:addToCart,a1:a1,a2:a2,a3:a3,a4:a4,a5:a5,a6:a6,a7:a7,a8:a8,a9:a9,a10:a10,a11:a11,a12:a12,a13:a13,a14:a14,a15:a15,a16:a16,a17:a17,a18:a18,a19:a19,a20:a20,a21:a21,noprice:noprice,thisRegion:thisRegion});};
+	_cf_configs.prototype.BuildColors=function(TextileSku,ColorAttribID,CurrentColor,Aval,thisRegion) { return ColdFusion.AjaxProxy.invoke(this, "BuildColors","61CEB7BDBBB5B89F82BCAE76A6BB17F46AC715B67B", {TextileSku:TextileSku,ColorAttribID:ColorAttribID,CurrentColor:CurrentColor,Aval:Aval,thisRegion:thisRegion});};
+	_cf_configs.prototype.setRefCode=function(refcode,employeeCode,refreshTarget,refreshURL) { return ColdFusion.AjaxProxy.invoke(this, "setRefCode","61CEB7BDBBB5B89F82BCAE76A6BB17F46AC715B67B", {refcode:refcode,employeeCode:employeeCode,refreshTarget:refreshTarget,refreshURL:refreshURL});};
+	_cf_configs.prototype.updateConfig=function(configid,qty,addToCart,a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18,a19,a20,a21,a22,a23,a24,a25,a26,a27,a28,a29,a30,noprice,thisRegion) { return ColdFusion.AjaxProxy.invoke(this, "updateConfig","61CEB7BDBBB5B89F82BCAE76A6BB17F46AC715B67B", {configid:configid,qty:qty,addToCart:addToCart,a1:a1,a2:a2,a3:a3,a4:a4,a5:a5,a6:a6,a7:a7,a8:a8,a9:a9,a10:a10,a11:a11,a12:a12,a13:a13,a14:a14,a15:a15,a16:a16,a17:a17,a18:a18,a19:a19,a20:a20,a21:a21,a22:a22,a23:a23,a24:a24,a25:a25,a26:a26,a27:a27,a28:a28,a29:a29,a30:a30,noprice:noprice,thisRegion:thisRegion});};
+	_cf_configs.prototype.loadConfig=function(skulookup,configid,thisRegion) { return ColdFusion.AjaxProxy.invoke(this, "loadConfig","61CEB7BDBBB5B89F82BCAE76A6BB17F46AC715B67B", {skulookup:skulookup,configid:configid,thisRegion:thisRegion});};
+	_cf_configs.prototype.CartAdd=function(styleList,configID,configsku,desc,msrp,yourprice,qty,qtyList,fullList,img,thisRegion,tlistprice) { return ColdFusion.AjaxProxy.invoke(this, "CartAdd","61CEB7BDBBB5B89F82BCAE76A6BB17F46AC715B67B", {styleList:styleList,configID:configID,configsku:configsku,desc:desc,msrp:msrp,yourprice:yourprice,qty:qty,qtyList:qtyList,fullList:fullList,img:img,thisRegion:thisRegion,tlistprice:tlistprice});};
+	_cf_configs.prototype.clearCart=function(cart) { return ColdFusion.AjaxProxy.invoke(this, "clearCart","61CEB7BDBBB5B89F82BCAE76A6BB17F46AC715B67B", {cart:cart});};
+/* ]]> */</script>
+<script type="text/javascript" src="/cfscripts/cfform.js"></script>
+<script type="text/javascript" src="/cfscripts/masks.js"></script>
+<script type="text/javascript" src="/cfscripts/cfformhistory.js"></script>
+<script type="text/javascript" src="/cfscripts/ajax/yui/yahoo-dom-event/yahoo-dom-event.js"></script>
+<script type="text/javascript" src="/cfscripts/ajax/yui/animation/animation-min.js"></script>
+<script type="text/javascript" src="/cfscripts/ajax/ext/adapter/yui/ext-yui-adapter.js"></script>
+<script type="text/javascript" src="/cfscripts/ajax/ext/ext-all.js"></script>
+<script type="text/javascript" src="/cfscripts/ajax/package/cfwindow.js"></script>
+<link rel="stylesheet" type="text/css" href="/cfscripts/ajax/resources/ext/css/ext-all.css" />
+<link rel="stylesheet" type="text/css" href="/cfscripts/ajax/resources/cf/cf.css" />
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="icon" href="/favicon.ico" type="image/x-icon"/>
+
+	
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<meta name="p:domain_verify" content="c9636a77e1d647378185d732d83aa493"/>
+
+	
+
+		
+
+			<link rel="canonical" href="https://www.humanscale.com/index.cfm" />
+
+		
+
+	
+
+	<link rel="stylesheet" href="/css/MyFontsWebfontsKit.css" type="text/css" media="screen, print" title="default" />
+
+	
+
+		
+
+			
+
+				<link href="/css/bootstrap.css" rel="stylesheet">
+
+			
+
+			<link href="/userfiles/css/slick-theme.css" rel="stylesheet">
+
+			<link href="/userfiles/css/slick.css" rel="stylesheet">
+
+			
+
+				<link href="/css/bootstrap-theme.css" rel="stylesheet">
+
+			
+
+			<link href="/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+		
+
+		<link rel="stylesheet" href="/css/style2014.css" type="text/css" media="screen, print" title="default" />
+
+		<link rel="stylesheet" href="/css/nav.v3.css?v=2" type="text/css" media="screen, print" title="default" />
+
+		<link rel="stylesheet" href="/css/new-cart-popup.css" type="text/css" />
+
+		
+
+		
+
+			<link rel="stylesheet" href="/css/homepage2017.css?v=8" type="text/css" media="screen, print" title="default" />
+
+			<link rel="stylesheet" href="/css/style_bfs2014.css" type="text/css" media="screen, print" title="default" />
+
+			<link rel="stylesheet" href='/font-awesome-4.7.0/css/font-awesome.min.css'>
+
+			<!-- local -->
+			<link rel="stylesheet" type="text/css" href="https://cloud.typography.com/6791396/6618572/css/fonts.css" />
+
+			<style type="text/css">
+
+				#sliderItem116 {
+					background-image: url(/userFiles/images/slideshow/occasional_EN1_120916.jpg);
+				}
+				#sliderItem94 {
+					background-image: url(/userFiles/images/slideshow/home-quickstand.jpg);
+				}
+				#sliderItem107 {
+					background-image: url(/userFiles/images/slideshow/lpc_homepage_slide_093016_en_1.jpg);
+				}
+				#sliderItem90 {
+					background-image: url(/userFiles/images/slideshow/trea_homepage_slide_EN_1.jpg);
+				}
+				#sliderItem74 {
+					background-image: url(/userFiles/images/slideshow/mconnect_homepage_021716_1_EN.jpg);
+				}
+				#sliderItem8 {
+					background-image: url(/userFiles/images/slideshow/LIGHTS.jpg);
+				}
+				@media only screen and (max-width: 400px) {
+					#sliderItem116 {
+						background-image: url(/userFiles/images/slideshow/occasional_EN2_120916.jpg);
+						background-size: auto;
+					}
+					#sliderItem94 {
+						background-image: url(/userFiles/images/slideshow/home-quickstand.jpg);
+					}
+					#sliderItem107 {
+						background-image: url(/userFiles/images/slideshow/lpc_homepage_slide_093016_EN_2.jpg);
+						background-size: auto;
+					}
+					#sliderItem90 {
+						background-image: url(/userFiles/images/slideshow/trea_homepage_slide_EN_2.jpg);
+						background-size: auto;
+					}
+					#sliderItem74 {
+						background-image: url(/userFiles/images/slideshow/mconnect_homepage_021716_2_EN.jpg);
+						background-size: auto;
+					}
+					#sliderItem8 {
+						background-image: url(/userFiles/images/slideshow/home_ipad-lights.jpg);
+						background-size: auto;
+					}
+				}
+
+			</style>
+
+			<!--[if lt IE 9]>
+				<script src="/js2014/html5.js"></script>
+			<![endif]-->
+
+		
+
+		<style type="text/css">
+
+			.ergonomic {background-image:url(/images/misc/nature-bg.jpg);}
+			.loader-scrim {
+				background-color: #fff;
+				position: fixed;
+				left: 0px;
+				top: 0px;
+				right: 0px;
+				bottom: 0px;
+				width: 100%;
+				height: 100%;
+				z-index: 1000;
+				-o-transition: all 500ms ease-out;
+				-ms-transition: all 500ms ease-out;
+				-moz-transition: all 500ms ease-out;
+				-webkit-transition: all 500ms ease-out;
+				transition: all 500ms ease-out;
+				opacity: 0;
+				text-align: center;
+				pointer-events: none;
+				-webkit-pointer-events: none;
+			}
+			.loader-scrim.loading {
+				opacity: 1;
+			}
+			.loader-scrim .loader-img {
+				display: table;
+				table-layout: fixed;
+				width: 20%;
+				max-width: 288px;
+				height: 100%;
+				margin: 0 auto;
+			}
+			.loader-scrim .loader-img .loader-img-container {
+				display: table-cell;
+				vertical-align: middle;
+			}
+			.loader-scrim .loader-img .loader-img-container img {
+				display: block;
+			}
+
+		</style>
+
+		<!--[if lt IE 9]>
+			<script src="//oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+			<script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+	
+
+	
+
+	
+
+	<link rel="stylesheet"  href='/font-awesome-4.7.0/css/font-awesome.min.css'>
+
+	
+
+	
+
+
+
+
+
+<style>
+
+#sliderItem166 {
+background-image:url(/userFiles/images/homepage/new_grid/nova-slider.jpg);
+}
+
+#sliderItem124 {
+background-image:url(/userFiles/images/homepage/new_grid/quickstand_eco_portable_standing_desk.jpg);
+}
+
+#sliderItem147 {
+background-image:url(/userFiles/images/landing/smart_ocean/landing_page_hero_1920x1080_2_ex2.jpg);
+}
+
+#sliderItem123 {
+background-image:url(/userFiles/images/homepage/new_grid/trea_ergonomic_office_chair.jpg);
+}
+
+@media only screen and (max-width : 400px) {
+
+
+#sliderItem166 {
+background-image:url(/userFiles/images/homepage/new_grid/nova-slider-mobile.jpg);
+
+background-size: auto;
+
+}
+
+
+#sliderItem124 {
+background-image:url(/userFiles/images/homepage/mobile/quickstand_eco_new.jpg);
+
+background-size: auto;
+
+}
+
+
+#sliderItem147 {
+background-image:url(/userFiles/images/landing/smart_ocean/Landing_Page_Hero_686x1200_mobile.jpg);
+
+background-size: auto;
+
+}
+
+
+#sliderItem123 {
+background-image:url(/userFiles/images/homepage/mobile/humanscale_trea.jpg);
+
+background-size: auto;
+
+}
+
+</style>
+
+
+
+	
+
+	
+
+	<!--[if lt IE 9]>
+		<script src="/js2014/html5.js"></script>
+	<![endif]-->
+
+	
+
+		<script src="/js2014/jquery.js" type="text/javascript"></script>
+
+		<script src="/js2014/jquery.cycle2.js" type="text/javascript"></script>
+
+		<script src="/js2014/jquery.cycle2.swipe.min.js" type="text/javascript"></script>
+
+		<script src="/js2014/jquery.cycle2.carousel.js" type="text/javascript"></script>
+
+		<script src="/js2014/jquery-ui.js" type="text/javascript"></script>
+
+		
+
+			
+
+				<script src="/js/bootstrap.min.js"></script>
+
+			
+
+			<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+			<script src="/js/ie10-viewport-bug-workaround.js"></script>
+
+		
+
+		<script src="/js2014/jquery.customSelect.min.js" type="text/javascript"></script>
+
+		<script src="/js2014/touch-phone.js" type="text/javascript"></script>
+
+		<script src="/js2014/jquery.hoverIntent.minified.js" type="text/javascript"></script>
+
+		<script src="/js2014/javascript.js" type="text/javascript"></script>
+
+		<script src="/js2014/jquery-functions.js" type="text/javascript"></script>
+
+		<script src="/js2014/attribute-change.js" type="text/javascript"></script>
+
+		<script type="text/javascript">
+
+			//<![CDATA[
+				$(document).ready(function() {
+					// updated 07 Oct
+					// PRODUCT BUILD RIGHT COL STICKY
+						//var sticky_navigation_offset_top = $('.twoColumnsRight').offset().top;
+						// updated 28 Feb
+						if($('.twoColumnsRight').length) {
+							var sticky_navigation = function(){
+								var right_prod = $('.rightProduct').height();
+								var sticky_navigation_offset_top = $('.twoColumnsRight').offset().top;
+								var right_col = $(".twoColumnsRight").height();
+								var win_height = $(window).height();
+								var scroll_top = $(window).scrollTop();
+
+
+							// our current vertical position from the top
+								// if we've scrolled more than the navigation, change its position to fixed to stick to top, otherwise change it back to relative
+								//alert(scroll_top - sticky_navigation_offset_top);
+								if (scroll_top > sticky_navigation_offset_top && $( window ).width() > 680 && win_height > right_prod ) {
+									var toppos = scroll_top - sticky_navigation_offset_top;
+									if(toppos > (right_col - right_prod)) {
+										$('.rightProduct').css({ 'position': 'absolute', 'bottom':0, 'top':'auto', 'right': 0 });
+									} else {
+										$('.rightProduct').css({ 'position': 'absolute', 'top':toppos, 'bottom':'auto', 'right': 0 });
+									}
+
+								} else {
+									$('.rightProduct').css({ 'position': 'relative', 'top':0 });
+								}
+							};
+
+							// run our function on load
+							sticky_navigation();
+
+							// and run it again every time you scroll
+							$(window).scroll(function() {
+								sticky_navigation();
+							});
+							$(window).resize(function() {
+								sticky_navigation();
+							});
+
+							$(".twoColumnsRight").resize(function() {
+								sticky_navigation();
+							});
+							$(".rightProduct").resize(function() {
+								sticky_navigation();
+							});
+						}
+
+							$('.libertyPagination div').click(function(){
+								if($(this).find('span').css("display") == 'none') {
+									jwplayer("myElement").pause(true);
+								} else {
+									//jwplayer("myElement").play();
+								}
+							});
+						// /updated 28 Feb
+					// /updated 07 Oct
+					// /PRODUCT BUILD RIGHT COL STICKY
+				});
+			//]]>
+
+		</script>
+
+	
+
+	
+
+	
+
+		
+
+	    <script type="text/javascript">
+
+			var ErrorHandler = function(statusCode, statusMsg)
+			{
+			alert('Status: ' + statusCode + ', ' + statusMsg);
+
+			}
+
+			var submitRefCode= function() {
+
+			var e = new configObj();
+			e.setCallbackHandler(returnRefCode);
+			e.setErrorHandler(ErrorHandler);
+			e.setForm('refCodeForm');
+			e.setHTTPMethod('POST');
+			e.setRefCode();
+
+			}
+
+
+			var returnRefCode = function(results) {
+
+			if (results.ERROR ==1) {
+
+			document.getElementById('refCodeMsg').innerHTML = results.MESSAGE;
+
+			} else if(results.ERROR ==2) {
+			document.getElementById('codeNameDiv').innerHTML = results.CODENAME;
+			document.getElementById('empRow').style.display='';
+			document.getElementById('refCodeMsg').innerHTML = results.MESSAGE;
+
+			} else {
+			document.getElementById('divRefCode').innerHTML =results.REFCODE;
+			popupOpen("referencePopup");
+			}
+			}
+
+
+
+			var submitRefCode2017= function() {
+
+			var e = new configObj();
+			e.setCallbackHandler(returnRefCode2017);
+			e.setErrorHandler(ErrorHandler);
+			e.setForm('refCodeForm');
+			e.setHTTPMethod('POST');
+			e.setRefCode();
+
+			}
+
+			
+			var returnRefCode2017 = function(results) {
+
+			if (results.ERROR ==1) {
+
+			document.getElementById('refCodeMsg').innerHTML = results.MESSAGE;
+
+			} else if(results.ERROR ==2) {
+			document.getElementById('empRow').style.display='';
+			document.getElementById('codeNameDiv').innerHTML = results.CODENAME;
+			document.getElementById('refCodeMsg').innerHTML = results.MESSAGE;
+
+			} else {
+			document.getElementById('refCodeSection').innerHTML = '<div class="refcode-recieved" style="display:block"><span><label>Ref Code</label><h3>' + results.REFCODE + '</h3></span><span> <a href="/index.cfm?&refcodelogoff=1" class="ref-exit">remove</i></a></span></div>';
+
+			}
+			}
+			
+
+
+			var submitRefCodeLogin= function() {
+
+			var e = new configObj();
+			e.setCallbackHandler(returnRefCodeLogin);
+			e.setErrorHandler(ErrorHandler);
+			e.setForm('refCodeFormLogin');
+			e.setHTTPMethod('POST');
+			e.setRefCode();
+
+			}
+
+
+
+			var returnRefCodeLogin = function(results) {
+
+			if (results.ERROR ==1) {
+
+			document.getElementById('divRefCode').innerHTML = results.MESSAGE;
+
+			} else if(results.ERROR ==2) {
+
+			} else {
+			document.getElementById('divRefCode').innerHTML = results.REFCODE;
+			}
+			}
+
+			
+			
+
+	    </script>
+
+	
+
+	<script type="text/javascript">
+		//The init function removes the toolbox and makes sure the title is empty
+		init = function(){
+		
+		}
+
+		//the showImage function updates the body of the cfwindow with an img tag       //and resizes the cfwindow to fit the image
+		showImage = function(imgPath,width,height){
+		myWindow = ColdFusion.Window.getWindowObject('recommendations');
+		myWindow.body.update("<img src='" + imgPath + "' alt='' border='0'>");
+		myWindow.setContentSize(width, height);
+		ColdFusion.Window.show('recommendations');
+		}
+
+		//the hideImage is called by the onmouseout event
+		hideImage = function(){
+		ColdFusion.Window.hide('recommendations');
+		}
+		</script>
+
+
+		<script type='text/javascript'>
+		function changeBox(divObj1,divObj2,pwObj)
+		{
+		document.getElementById(divObj1).style.display='none';
+		document.getElementById(divObj2).style.display='';
+		document.getElementById(pwObj).focus();
+		}
+		function restoreBox(divObj1,divObj2,pwObj)
+		{
+		if(document.getElementById(pwObj).value=='')
+		{
+		document.getElementById(divObj1).style.display='';
+		document.getElementById(divObj2).style.display='none';
+		}
+		}
+		</script>
+
+		<script type='text/javascript'>
+		// this function determines whether the event is the equivalent of the microsoft
+		// mouseleave or mouseenter events.
+		function isMouseLeaveOrEnter(e, handler)
+		{
+		var reltg = e.relatedTarget ? e.relatedTarget : e.type == 'mouseout' ? e.toElement : e.fromElement;
+		while (reltg && reltg != handler) reltg = reltg.parentNode;
+		return (reltg != handler);
+		}
+
+
+
+		equalheight = function(container){
+
+
+		var currentTallest = 0,
+
+		currentRowStart = 0,
+
+		rowDivs = new Array(),
+
+		$el,
+
+		topPosition = 0;
+
+		$(container).each(function() {
+
+
+
+		$el = $(this);
+
+		$($el).height('auto')
+
+		topPostion = $el.position().top;
+
+
+
+		if (currentRowStart != topPostion) {
+
+		for (currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) {
+
+		rowDivs[currentDiv].height(currentTallest);
+
+		}
+
+		rowDivs.length = 0; // empty the array
+
+		currentRowStart = topPostion;
+
+		currentTallest = $el.height();
+
+		rowDivs.push($el);
+
+		} else {
+
+		rowDivs.push($el);
+
+		currentTallest = (currentTallest < $el.height()) ? ($el.height()) : (currentTallest);
+
+		}
+
+		for (currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) {
+
+		rowDivs[currentDiv].height(currentTallest);
+
+		}
+
+		});
+
+		}
+
+
+
+		$(window).load(function() {
+		equalheight('.equalHeight .galleryItem');
+		equalheight('.equalHeight .productBuy');
+		equalheight('.equalHeight .recitem');
+		equalheight('.equalHeight .jobPost');
+		equalheight('.equalHeight .fourUpItem');
+		equalheight('.equalHeight .bodyCol');
+		equalheight('.equalHeight .textHolder2');
+		//equalheight('.equalHeight .downloadThumbHolder');
+		});
+
+		$(window).resize(function(){
+		equalheight('.equalHeight .galleryItem');
+		equalheight('.equalHeight .productBuy');
+		equalheight('.equalHeight .recitem');
+		equalheight('.equalHeight .jobPost');
+		equalheight('.equalHeight .fourUpItem');
+		equalheight('.equalHeight .bodyCol');
+		equalheight('.equalHeight .textHolder2');
+		//equalheight('.equalHeight .downloadThumbHolder');
+		});
+
+		// /updated equal height
+
+	</script>
+
+	
+	<style>
+
+/* cfwindow overrides */
+
+
+
+.x-dlg div.x-resizable-handle-north {
+  background-image:none;
+  border:0px none;
+  }
+.x-dlg div.x-resizable-handle-south {
+  background-image:none;
+  border:0px none;
+  height:0px;
+  }
+.x-dlg div.x-resizable-handle-east {
+  background-image:none;
+  width:0px;
+  border:0px none;
+  margin-right:0px;
+  }
+.x-dlg div.x-resizable-handle-west {
+  background-image:none;
+  border:0px none;
+  width:0px;
+  }
+.x-dlg div.x-resizable-handle-northeast, .ytheme-gray .x-dlg div.x-resizable-handle-northeast {
+  background-image:none;
+  border:0px none;
+  height:0px;
+  width:0px;
+  }
+.x-dlg div.x-resizable-handle-northwest, .ytheme-gray .x-dlg div.x-resizable-handle-northwest {
+  background-image:none;
+  border:0px none;
+  height:0px;
+  width:0px;
+  }
+.x-dlg div.x-resizable-handle-southeast {
+  background-image:none;
+  border:0px none;
+  height:0px;
+  width:0px;
+  }
+.x-dlg div.x-resizable-handle-southwest {
+  background-image:none;
+  border:0px none;
+  height:0px;
+  width:0px;
+  margin-bottom:0px;
+  margin-left:0px;
+  }
+  */
+.x-dlg .x-dlg-dlg-body {
+  border-color:none;
+  border-style:none;
+  border-width:0px 0px 0px;
+  }
+.xsbc {
+background-image:none;
+  border:0px none;
+  height:0px;
+}
+.xsml {
+background-image:none;
+  border:0px none;
+  height:0px;
+}
+.x-dlg-dlg-body   {
+
+background-image:none;
+  border:0px none;
+
+
+}
+
+.x-shadow .xsbc {
+background-image:none;
+  border:0px none;
+  height:0px;
+}
+.x-shadow .xstc, .x-shadow .xsbc {
+float:left;
+height:6px;
+}
+.xsbc {
+background-image:none;
+border:0 none;
+height:0;
+}
+.x-shadow * {
+border:0 none;
+clear:none;
+margin:0;
+padding:0;
+}
+.x-shadow * {
+overflow:hidden;
+}
+
+.x-shadow .xsml   {
+background-image:none;
+      border:0px none;
+}
+
+.x-shadow .xsbl {
+background-image:none;
+      border:0px none;
+}
+
+.x-shadow .xsmr {
+background-image:none;
+      border:0px none;
+}
+
+.x-shadow .xsbr {
+background-image:none;
+      border:0px none;
+}
+
+.x-window-body {
+background:#fff;
+}
+
+/* end cfwindow overrides */
+</style>
+
+
+	<style type="text/css">
+
+		.leftArrow, .rightArrow {
+			cursor: pointer;
+		}
+
+	</style>
+
+	
+	<script type="text/javascript">
+
+		_cf_loadingtexthtml="";
+
+	</script>
+
+	
+
+	
+
+	    <script src="/js/slick.min.js" type="text/javascript"></script>
+
+	
+
+	<script type="text/javascript">
+
+	    ( function ( h, o, t, j, a, r ) {
+
+	        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+	        h._hjSettings={hjid:860628,hjsv:6};
+	        a=o.getElementsByTagName('head')[0];
+	        r=o.createElement('script');r.async=1;
+	        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+	        a.appendChild(r);
+
+	    })( window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+
+	</script>
+
+
+<script type="text/javascript">/* <![CDATA[ */
+	ColdFusion.Ajax.importTag('CFFORM');
+/* ]]> */</script>
+
+<script type="text/javascript">/* <![CDATA[ */
+	ColdFusion.Ajax.importTag('CFDIV');
+/* ]]> */</script>
+
+<script type="text/javascript">/* <![CDATA[ */
+	ColdFusion.Ajax.importTag('CFWINDOW');
+/* ]]> */</script>
+<title>Humanscale | Ergonomic Office Furniture Solutions</title><meta name="keywords" content="Humanscale"><meta name="description" content="As the premier designer of ergonomic office furniture, our products improve health and comfort. Shop our award-winning office solutions, including standing desks. ">
+<script type="text/javascript">/* <![CDATA[ */
+	ColdFusion.Event.registerOnLoad(init,null,false,true);
+/* ]]> */</script>
+
+
+	
+
+		<script type="text/javascript" src="//static.criteo.net/js/ld/ld.js" async="true"></script>
+
+		<script type="text/javascript">
+
+			var deviceCheck = ( function () {
+				var iPadCheck = /iPad/.test( navigator.userAgent );
+				var mobileCheck = /Mobile|iP(hone|od)|Android|BlackBerry|IEMobile|Silk/.test( navigator.userAgent );
+				return  iPadCheck ? 't' : mobileCheck ? 'm': 'd';
+			})();
+
+			window.criteo_q = window.criteo_q || [];
+
+			criteo_q.push(
+
+			{ event: "setAccount", account: 51022 },
+
+			
+			{ event: "setSiteType", type: deviceCheck },   
+
+			
+			{ event: "viewHome" } 
+			
+
+			
+
+			
+			
+
+			
+
+			 
+
+
+			
+			);
+
+		</script>
+
+	
+
+
+
+
+<script>
+	var dataLayer = [{
+	'page':{
+	
+	
+
+	'region': 'United States',
+	
+	'focus': 'business',
+	
+	
+	'language': 'en'
+	},
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	'user': {
+	  'type': 'Customer'
+	  
+	  }
+	}];
+
+</script>
+
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-M54BL3M');</script>
+<!-- End Google Tag Manager -->
+
+
+
+<meta property="og:image" content="https://www.humanscale.com/favicon.png"></head>
+
+
+
+	<body  >
+
+		<!-- Google Tag Manager (noscript) -->
+			<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M54BL3M" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+		<!-- End Google Tag Manager (noscript) -->
+
+		  
+
+		
+
+			
+
+			
+
+			
+
+			
+
+			  
+
+			
+
+			
+
+		<div class="nav-container">
+				<div class="mobile nav-mini">
+					<ul class="nav-mini-list">
+						<li class="nav-mini-item menu">
+							<a href="javascript:void(0);" class="burger-link nav-mini-link menu-link">
+								<span class="burger"></span>
+								<i class="mobile icon-uniF1CA"></i>
+							</a>
+						</li>
+						
+						<li class="nav-mini-item">
+							<a href="javascript:void(0);" class="search nav-mini-link"><i class="flaticon-search"></i></a>
+						</li>
+						
+						<li class="nav-mini-item logo">
+							<a href="javascript:void(0);" class="desktop nav-mini-link">
+								<img alt="Humanscale" src="/imagesHS2017/logo.svg">
+							</a>
+							<a class="mobile nav-mini-link logo" href="/" style="margin-bottom: 4px;">
+
+								<svg style="fill: #58595b;" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+									 viewBox="0 0 414.9 58.8" style="enable-background:new 0 0 414.9 58.8;" xml:space="preserve">
+								<style type="text/css">
+									.st0{fill:#231F20;}
+								</style>
+								<g id="Layer_1_1_">
+									<path d="M9.1,56.3v-55h4.9v24.1h30V1.3H49v55h-4.9V30h-30v26.3C14.1,56.3,9.1,56.3,9.1,56.3z"/>
+									<path d="M83.9,18h4.6v29.7c0,3,0.2,6,0.4,8.6h-4.7l-0.2-5.7l-0.1-0.1c-2.7,4.7-7,6.9-11.9,6.9c-12.6,0-13.5-11.1-13.5-15.5v-24h4.6
+										v24.7c0,6.6,3.8,10.6,10.1,10.6c7.5,0,11-6.3,11-13.2V18z"/>
+									<path d="M100.5,23.7l0.1,0.1c2.7-4.7,7-6.9,11.9-6.9c6,0,10.7,3.3,12.4,8.4c2.8-4.6,7.3-8.4,13.2-8.4c12.6,0,13.5,11.1,13.5,15.5
+										v24h-4.6V31.7c0-6.6-3.8-10.6-10.1-10.6c-7.5,0-11,6.3-11,13.2v22h-4.6V31.6c0-6.6-3.8-10.6-10.1-10.6c-7.5,0-11,6.3-11,13.2v22
+										h-4.6V26.5c0-3-0.2-6-0.4-8.6h4.7L100.5,23.7z"/>
+									<path d="M164.6,45.6c0-9.6,13.5-8.4,20.1-8.6c0.5,8-1.5,16.2-11.4,16.2C168.7,53.2,164.6,50.9,164.6,45.6z M184.7,32.8
+										c-5.5,0.2-12.2-0.5-17.4,1.7c-4.6,1.8-7.8,5.9-7.8,11.1c0,7.5,5.7,11.8,12.7,11.8c5.2,0,10.3-3.1,11.9-6.3l0.2-0.5h0.1l0.1,5.7h4.7
+										c-0.1-2.6-0.5-5.7-0.4-8.6V29.6c0.1-8.7-5.2-12.7-13.5-12.7c-7.3,0-13.2,3-14.4,10.8h4.9c0.6-5.2,4.6-6.6,9.4-6.6
+										c5.4,0,8.6,2,9.1,8.2v3.4C184.4,32.8,184.7,32.8,184.7,32.8z"/>
+									<path d="M202.8,56.3h-4.6V26.6c0-3-0.2-6-0.4-8.6h4.7l0.2,5.7l0.1,0.1c2.7-4.7,7-6.9,11.9-6.9c12.6,0,13.5,11.1,13.5,15.5v24h-4.6
+										V31.7c0-6.6-3.8-10.6-10.1-10.6c-7.5,0-11,6.3-11,13.2L202.8,56.3L202.8,56.3z"/>
+									<path d="M251,16.9c7.3,0,13.3,2.5,13.9,10.6H260c-0.5-4.8-4.7-6.4-9.5-6.4c-4.3,0-8.6,1.7-8.6,6.2c0,5.7,7.4,5.2,17.7,8.7
+										c3.9,1.4,6.5,4.8,6.5,9c0,8.6-8,12.6-16.1,12.6c-6.6,0-14.3-3.1-14.4-11.6h4.9c0.4,5.7,5.4,7.4,10.6,7.4c4.9,0,10-2.3,10-7.6
+										c0-5.5-6-6.4-12.2-7.8c-6-1.5-12.2-3.2-12.2-10.3C237,19.6,244.3,16.9,251,16.9z"/>
+									<path d="M297.6,29.8c-0.4-5.9-4.1-8.7-10.5-8.7c-7,0-11.3,7.3-11.3,16s4.3,16.1,11.3,16.1c5.9,0,10.1-3.7,10.5-9h4.9
+										c-1.2,8.7-6.3,13.2-14.9,13.2c-11.4,0-16.7-9.8-16.7-20.3c0-10.3,5.7-20.3,17.1-20.3c7.9,0,14.3,4.7,14.6,12.9h-5L297.6,29.8
+										L297.6,29.8z"/>
+									<path d="M313.1,45.6c0-9.6,13.5-8.4,20.1-8.6c0.5,8-1.5,16.2-11.4,16.2C317.1,53.2,313.1,50.9,313.1,45.6z M333.1,32.8
+										c-5.5,0.2-12.2-0.5-17.4,1.7c-4.6,1.8-7.8,5.9-7.8,11.1c0,7.5,5.7,11.8,12.8,11.8c5.2,0,10.3-3.1,11.9-6.3l0.2-0.5h0.1l0.1,5.7h4.7
+										c-0.1-2.6-0.5-5.7-0.4-8.6V29.6c0.1-8.7-5.2-12.7-13.5-12.7c-7.4,0-13.2,3-14.4,10.8h4.9c0.6-5.2,4.6-6.6,9.4-6.6
+										c5.4,0,8.6,2,9.1,8.2L333.1,32.8L333.1,32.8z"/>
+									<path d="M351.2,56.3h-4.6v-55h4.6V56.3z"/>
+									<path d="M364,34c0.6-6.8,4.6-12.9,12.1-12.9c7.9,0,11.9,5.5,12.4,12.9H364z M393.6,38.2c0-11.9-4.7-21.4-17.5-21.4
+										c-11.3,0-17.1,10-17.1,20.3c0,10.5,5.3,20.3,16.7,20.3c9.2,0,14.9-4.2,17.4-13.3h-4.8c-1.1,5.3-5.7,9.1-11.1,9.1
+										c-9.4,0-13.2-6.9-13.3-15H393.6z"/>
+								</g>
+								<g id="Layer_2">
+									<g>
+										<path class="st0" d="M393.9,7.2c0-3.3,2.7-5.8,5.9-5.8c3.2,0,5.9,2.5,5.9,5.8S403,13,399.8,13C396.6,13,393.9,10.5,393.9,7.2z
+											 M399.8,12c2.6,0,4.7-2.1,4.7-4.8s-2.1-4.8-4.7-4.8c-2.7,0-4.7,2.1-4.7,4.8S397.1,12,399.8,12z M398.6,10.5h-1V3.9h2.6
+											c1.6,0,2.3,0.6,2.3,1.8s-0.7,1.7-1.7,1.8l1.8,3h-1.1l-1.7-3h-1.1v3H398.6z M399.8,6.7c0.9,0,1.6,0,1.6-1.1c0-0.9-0.7-1-1.5-1h-1.4
+											v2.1C398.6,6.7,399.8,6.7,399.8,6.7z"/>
+									</g>
+								</g>
+								</svg>
+							</a>
+						</li>
+						
+						
+						<li class="nav-mini-item">
+
+							
+
+							<!-- if shopping cart does not have items --><a href="/shop/cart.cfm" class="nav-mini-link"><i class="icon-commerce"></i></a>
+							
+						</li>
+						
+					</ul>
+				</div>
+
+
+				<div class="main-nav nav nav-1">
+
+
+				 
+
+				
+
+				<div class="nav-holder">
+						<div class="nav-wrapper">
+
+							<ul class="nav-list" >
+
+								
+									<li class="mobile nav-item sign-in">
+										<a href="javascript:void(0);" class="nav-link sign-in-link account modal-link">
+											<div class="h2">Sign in or Register</div>
+											<i class="mobile icon-next"></i>
+										</a>
+									</li>
+								
+								<li class="nav-item nav-logo desktop">
+									<a href="/" class="nav-link">
+										<img alt="Humanscale" src="/imagesHS2017/logo.svg" />
+									</a>
+								</li>
+								<li class="not-tablet nav-item">
+									<a href="/products" class="nav-link" data-link-to="products">
+										<div class="h2">PRODUCTS</div>
+										<i class="mobile icon-next"></i>
+									</a>
+								</li>
+								
+
+								
+									
+									<li class="not-tablet nav-item">
+										<a href="/ergonomics" class="nav-link" data-link-to="ergonomics">
+											<div class="h2">ERGONOMICS</div>
+											<i class="mobile icon-next"></i>
+										</a>
+									</li>
+									
+								
+
+								
+									
+									<li class="not-tablet nav-item">
+										<a href="/resources" class="nav-link" data-link-to="1-resources" >
+											<div class="h2">RESOURCES</div>
+											<i class="mobile icon-next"></i>
+										</a>
+									</li>
+									
+								
+								<div class="tablet">
+									<li class="nav-item">
+										<a href="/products" class="nav-link" data-link-to="products">
+											<div class="h2">PRODUCTS</div>
+											<i class="mobile icon-next"></i>
+										</a>
+									</li>
+									
+									
+									<li class="nav-item">
+										<a href="/ergonomics" class="nav-link" data-link-to="ergonomics">
+											<div class="h2">ERGONOMICS</div>
+											<i class="mobile icon-next"></i>
+										</a>
+									</li>
+									
+									
+									<li class="nav-item">
+										<a href="/resources" class="nav-link" data-link-to="1-resources" >
+											<div class="h2">RESOURCES</div>
+											<i class="mobile icon-next"></i>
+										</a>
+									</li>
+									
+									
+								</div>
+
+								
+									
+									<li class="not-tablet nav-item healthcare-nav">
+										<a href="/healthcare" class="nav-link" data-link-to="healthcare">
+											<div class="h2">HEALTHCARE</div>
+											<i class="mobile icon-next"></i>
+										</a>
+									</li>
+									
+									
+									<li class="not-tablet nav-item">
+										<a href="/about/index.cfm" class="nav-link" data-link-to="about" >
+											<div class="h2">ABOUT</div>
+											<i class="mobile icon-next"></i>
+										</a>
+									</li>
+									
+
+									
+									
+
+										
+											<li class="not-tablet nav-item">
+												<a href="/about/company-overview/contact-us.cfm" class="nav-link" data-link-to="contact">
+													<div class="h2">CONTACT</div>
+													<i class="mobile icon-next"></i>
+												</a>
+											</li>
+										
+								
+								<div class="tablet">
+									
+									
+									<li class="nav-item healthcare-nav">
+										<a href="/healthcare" class="nav-link" data-link-to="healthcare">
+											<div class="h2">HEALTHCARE</div>
+											<i class="mobile icon-next"></i>
+										</a>
+									</li>
+									
+									
+									
+									<li class="nav-item">
+										<a href="/about" class="nav-link" data-link-to="about" >
+											<div class="h2">ABOUT</div>
+											<i class="mobile icon-next"></i>
+										</a>
+									</li>
+									
+									
+									
+
+									
+									<li class="nav-item">
+										<a href="/about/company-overview/contact-us.cfm" class="nav-link" data-link-to="contact">
+											<div class="h2">CONTACT</div>
+											<i class="mobile icon-next"></i>
+										</a>
+									</li>
+									
+								</div>
+								
+
+
+							</ul>
+
+							<div class="mobile nav-footer">
+								<ul class="nav-footer-list">
+									<li class="nav-footer-item">
+										<a href="javascript:void(0);" class="nav-footer-link">
+											<i class="icon-phone">
+											</i>
+											<div class="h2">
+												Contact Support
+											</div>
+										</a>
+									</li>
+									<li class="nav-footer-item">
+										<a href="javascript:void(0);" class="nav-footer-link">
+											<i class="icon-map-marker">
+											</i>
+											<div class="h2">
+												Find a Showroom
+											</div>
+										</a>
+									</li>
+									<li class="nav-footer-item">
+										<a href="javascript:void(0);" class="nav-footer-link modal-link global">
+											<i class="flaticon-internet">
+											</i>
+											<div class="h2">
+												Change Region
+											</div>
+										</a>
+									</li>
+									<li class="nav-footer-item">
+										<ul class="nav-footer-social">
+											<li class="facebook">
+												<a target="_blank" href="https://www.facebook.com/humanscale/">
+													<i class="icon-facebook2"></i>
+												</a>
+											</li>
+											<li class="twitter">
+												<a target="_blank" href="https://twitter.com/humanscale/">
+													<i class="icon-twitter"></i>
+												</a>
+											</li>
+											<li class="linkedin">
+												<a target="_blank" href="https://www.linkedin.com/company/humanscale/">
+													<i class="icon-linkedin"></i>
+												</a>
+											</li>
+											<li class="instagram">
+												<a target="_blank" href="https://www.instagram.com/humanscalehq/">
+													<i class="icon-instagram"></i>
+												</a>
+											</li>
+											<li class="blog">
+												<a target="_blank" href="https://blog.humanscale.com">
+													<i class="icon-rss2"></i>
+												</a>
+											</li>
+											<li class="pinterest">
+												<a target="_blank" href="https://www.pinterest.com/">
+													<i class="icon-pinterest"></i>
+												</a>
+											</li>
+											<li class="youtube">
+												<a target="_blank" href="https://www.youtube.com/user/Humanscalevideo/">
+													<i class="icon-youtube"></i>
+												</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="desktop nav-mini clearfix">
+						<ul class="nav-mini-list">
+
+							
+
+								<li class="nav-mini-item">
+
+									
+
+										<a href="/shop/cart.cfm" class="nav-mini-link cart">
+
+											<i class="icon-commerce"></i>
+
+										</a>
+
+									
+
+								</li>
+
+							
+
+		
+								
+								<li class="nav-mini-item">
+
+									<a href="javascript:void(0);" class="nav-mini-link account">
+
+										
+
+											
+
+											<i class="icon-profile"></i>
+
+										
+
+									</a>
+
+								</li>
+								
+
+		
+		
+							<li class="nav-mini-item">
+								<a href="javascript:void(0);" class="nav-mini-link search"><i class="flaticon-search"></i></a>
+							</li>
+		
+							<li class="nav-mini-item active">
+								<a href="javascript:void(0);" class="nav-mini-link global">
+
+									<style>
+										.nav-mini-item .region-name {
+											margin-right: 8px;
+										    font-size: 11px;
+										    line-height: 22px;
+										    font-weight: normal;
+										    vertical-align: bottom;
+										    font-family: "UniversLTStd-Light";
+										}
+										.nav-mini-item .svg.flag {
+											display: inline-block;
+											width: 20px;
+											height: 20px;
+											margin-right: 8px;
+											vertical-align: text-bottom;
+										}
+									</style>
+
+									
+
+	
+		
+		<span class="region-name united-states">
+			
+			United States
+		
+		</span>
+
+	
+
+
+
+									<i class="flaticon-internet"></i>
+
+								</a>
+							</li>
+
+
+		
+
+							
+
+						</ul>
+					</div>
+				</div>
+				<div class="nav-wrapper-group">
+					<div class="nav nav-2 nav-wrapper" data-link-from="products">
+						<div class="nav-holder">
+							<ul class="nav-list">
+								<li class="mobile nav-item">
+									<a href="javascript:void(0);" class="back-link nav-link">
+										<i class="icon-back"></i>
+										<div class="h3">Back</div>
+									</a>
+								</li>
+								<li class="mobile nav-item">
+									<a href="/products">
+										<div class="h3">Products</div>
+									</a>
+								</li>
+
+
+								
+								<li class="nav-item">
+									<a href="/products/category_detail.cfm?category=seating" class="nav-link" data-href="/products/category_detail.cfm?category=seating" data-link-to="cat1">
+										<div class="h3">Chairs & Stools</div>
+										<i class="icon-next"></i>
+									</a>
+								</li>
+								
+								<li class="nav-item">
+									<a href="/products/category_detail.cfm?category=monitorarms" class="nav-link" data-href="/products/category_detail.cfm?category=monitorarms" data-link-to="cat2">
+										<div class="h3">Monitor Arms & Integrated Docks</div>
+										<i class="icon-next"></i>
+									</a>
+								</li>
+								
+								<li class="nav-item">
+									<a href="/products/category_detail.cfm?category=sitstand" class="nav-link" data-href="/products/category_detail.cfm?category=sitstand" data-link-to="cat42">
+										<div class="h3">Sit/Stand Solutions</div>
+										<i class="icon-next"></i>
+									</a>
+								</li>
+								
+								<li class="nav-item">
+									<a href="/products/category_detail.cfm?category=lighting" class="nav-link" data-href="/products/category_detail.cfm?category=lighting" data-link-to="cat4">
+										<div class="h3">Lighting</div>
+										<i class="icon-next"></i>
+									</a>
+								</li>
+								
+								<li class="nav-item">
+									<a href="/products/category_detail.cfm?category=keyboard_systems" class="nav-link" data-href="/products/category_detail.cfm?category=keyboard_systems" data-link-to="cat3">
+										<div class="h3">Keyboard Systems</div>
+										<i class="icon-next"></i>
+									</a>
+								</li>
+								
+								
+								
+
+								<li class="nav-item">
+									<a href="/products/category_detail.cfm?category=connectivity" class="nav-link" data-href="/products/category_detail.cfm?category=connectivity" data-link-to="cat43">
+										<div class="h3">Technology Tools</div>
+										<i class="icon-next"></i>
+									</a>
+								</li>
+								
+								
+								
+
+								<li class="nav-item">
+									<a href="/products/category_detail.cfm?category=cable_management" class="nav-link" data-href="/products/category_detail.cfm?category=cable_management" data-link-to="cat18">
+										<div class="h3">Cable Management</div>
+										<i class="icon-next"></i>
+									</a>
+								</li>
+								
+								
+								
+
+								<li class="nav-item">
+									<a href="/products/ergonomic-tools.cfm" class="nav-link" data-href="/products/ergonomic-tools.cfm" data-link-to="cat14">
+										<div class="h3">Ergonomic Office Tools</div>
+										<i class="icon-next"></i>
+									</a>
+								</li>
+								
+								
+
+
+							</ul>
+							
+
+							<div class="product-nav nav-3 sub-nav nav-list" data-link-from="cat1">
+								<div class="mobile nav-item">
+									<a href="javascript:void(0);" class="back-link nav-link">
+										<i class="icon-back"></i>
+										<div class="h3">Back</div>
+									</a>
+								</div>
+								<a href="/products/category_detail.cfm?category=seating" class="product-nav-link img">
+									<img src="/userFiles/images/homepage/nav_menu/menu_seating.jpg" alt="Seating">
+								</a>
+								<div class="p-details">
+									<div class="h4 head">
+										Chairs & Stools
+									</div>
+									<div class="bod">
+										<p>
+											Humanscale chairs replace heavy, complex mechanisms with the sitter&rsquo;s own body weight and the laws of physics to encourage movement and provide unparalleled comfort.
+										</p>
+									</div>
+									<div class="cta">
+										<a href="/products/category_detail.cfm?category=seating">
+											<div class="h5">
+												See all models
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							
+
+							<div class="product-nav nav-3 sub-nav nav-list" data-link-from="cat2">
+								<div class="mobile nav-item">
+									<a href="javascript:void(0);" class="back-link nav-link">
+										<i class="icon-back"></i>
+										<div class="h3">Back</div>
+									</a>
+								</div>
+								<a href="/products/category_detail.cfm?category=monitorarms" class="product-nav-link img">
+									<img src="/userFiles/images/homepage/nav_menu/menu_monitor_armsg.jpg" alt="Monitor Arms & Integrated Docks">
+								</a>
+								<div class="p-details">
+									<div class="h4 head">
+										Monitor Arms & Integrated Docks
+									</div>
+									<div class="bod">
+										<p>
+											Humanscale monitor arms offer ultimate stability and effortless functionality to instantly create a more dynamic workstation.
+										</p>
+									</div>
+									<div class="cta">
+										<a href="/products/category_detail.cfm?category=monitorarms">
+											<div class="h5">
+												See all models
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							
+
+							<div class="product-nav nav-3 sub-nav nav-list" data-link-from="cat42">
+								<div class="mobile nav-item">
+									<a href="javascript:void(0);" class="back-link nav-link">
+										<i class="icon-back"></i>
+										<div class="h3">Back</div>
+									</a>
+								</div>
+								<a href="/products/category_detail.cfm?category=sitstand" class="product-nav-link img">
+									<img src="/userFiles/images/homepage/nav_menu/menu_sitstand.jpg" alt="Sit/Stand Solutions">
+								</a>
+								<div class="p-details">
+									<div class="h4 head">
+										Sit/Stand Solutions
+									</div>
+									<div class="bod">
+										<p>
+											Balanced movement is the key to wellness at work. Humanscale sit/stand products were designed to make changing postures throughout the day effortless.
+										</p>
+									</div>
+									<div class="cta">
+										<a href="/products/category_detail.cfm?category=sitstand">
+											<div class="h5">
+												See all models
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							
+
+							<div class="product-nav nav-3 sub-nav nav-list" data-link-from="cat4">
+								<div class="mobile nav-item">
+									<a href="javascript:void(0);" class="back-link nav-link">
+										<i class="icon-back"></i>
+										<div class="h3">Back</div>
+									</a>
+								</div>
+								<a href="/products/category_detail.cfm?category=lighting" class="product-nav-link img">
+									<img src="/userFiles/images/homepage/nav_menu/menu_lighting.jpg" alt="Lighting">
+								</a>
+								<div class="p-details">
+									<div class="h4 head">
+										Lighting
+									</div>
+									<div class="bod">
+										<p>
+											Featuring sustainable design and advanced LED technology, Humanscale task lights reduce eye strain, improve reading comfort and reduce energy use and costs.
+										</p>
+									</div>
+									<div class="cta">
+										<a href="/products/category_detail.cfm?category=lighting">
+											<div class="h5">
+												See all models
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							
+
+							<div class="product-nav nav-3 sub-nav nav-list" data-link-from="cat3">
+								<div class="mobile nav-item">
+									<a href="javascript:void(0);" class="back-link nav-link">
+										<i class="icon-back"></i>
+										<div class="h3">Back</div>
+									</a>
+								</div>
+								<a href="/products/category_detail.cfm?category=keyboard_systems" class="product-nav-link img">
+									<img src="/userFiles/images/homepage/nav_menu/menu_keyboards.jpg" alt="Keyboard Systems">
+								</a>
+								<div class="p-details">
+									<div class="h4 head">
+										Keyboard Systems
+									</div>
+									<div class="bod">
+										<p>
+											Keyboard systems are a crucial component of an ergonomic workstation, they&nbsp;reduce hunched typing postures to maximize comfort and wellness at work.
+										</p>
+									</div>
+									<div class="cta">
+										<a href="/products/category_detail.cfm?category=keyboard_systems">
+											<div class="h5">
+												See all models
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							
+							
+
+
+							<div class="product-nav nav-3 sub-nav nav-list" data-link-from="cat43">
+								<div class="mobile nav-item">
+									<a href="javascript:void(0);" class="back-link nav-link">
+										<i class="icon-back"></i>
+										<div class="h3">Back</div>
+									</a>
+								</div>
+								<a href="/products/category_detail.cfm?category=connectivity" class="product-nav-link img">
+									<img src="/userFiles/images/homepage/nav_menu/menu_technology.jpg" alt="Technology Tools">
+								</a>
+								<div class="p-details">
+									<div class="h4 head">
+										Technology Tools
+									</div>
+									<div class="bod">
+										<p>
+											Our range of technology-integrated tools were designed to adapt to the latest trends in workplace wellness and support workers for years to come.
+										</p>
+									</div>
+									<div class="cta">
+										<a href="/products/category_detail.cfm?category=connectivity">
+											<div class="h5">
+												See all models
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							
+
+
+							<div class="product-nav nav-3 sub-nav nav-list" data-link-from="cat18">
+								<div class="mobile nav-item">
+									<a href="javascript:void(0);" class="back-link nav-link">
+										<i class="icon-back"></i>
+										<div class="h3">Back</div>
+									</a>
+								</div>
+								<a href="/products/category_detail.cfm?category=cable_management" class="product-nav-link img">
+									<img src="/userFiles/images/homepage/nav_menu/menu_cable.jpg" alt="Cable Management">
+								</a>
+								<div class="p-details">
+									<div class="h4 head">
+										Cable Management
+									</div>
+									<div class="bod">
+										<p>
+											Cable management solutions promote a more organized workspace and keep under-desk areas neat and hazard-free.
+										</p>
+									</div>
+									<div class="cta">
+										<a href="/products/category_detail.cfm?category=cable_management">
+											<div class="h5">
+												See all models
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							
+
+
+							<div class="product-nav nav-3 sub-nav nav-list" data-link-from="cat14">
+								<div class="mobile nav-item">
+									<a href="javascript:void(0);" class="back-link nav-link">
+										<i class="icon-back"></i>
+										<div class="h3">Back</div>
+									</a>
+								</div>
+								<a href="/products/ergonomic-tools.cfm" class="product-nav-link img">
+									<img src="/userFiles/images/homepage/nav_menu/menu_ergo2.jpg" alt="Ergonomic Office Tools">
+								</a>
+								<div class="p-details">
+									<div class="h4 head">
+										Ergonomic Office Tools
+									</div>
+									<div class="bod">
+										<p>
+											Discover a full range of ergonomic work tools from Humanscale that keep desks clutter-free and improve comfort in the workplace.
+										</p>
+									</div>
+									<div class="cta">
+										<a href="/products/ergonomic-tools.cfm">
+											<div class="h5">
+												See all models
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							
+
+
+						</div>
+					</div>
+
+					<div class="nav nav-2 nav-wrapper" data-link-from="ergonomics">
+						<div class="nav-holder">
+							<ul class="nav-list">
+								<li class="mobile nav-item">
+									<a href="javascript:void(0);" class="back-link nav-link">
+										<i class="icon-back"></i>
+										<div class="h3">Back</div>
+									</a>
+								</li>
+								<li class="mobile nav-item">
+									<a href="/ergonomics">
+										<div class="h3">Ergonomics</div>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="javascript:void(0);" class="nav-link" data-link-to="humanscale-consulting">
+										<div class="h3">Humanscale Consulting</div>
+										<i class="icon-next"></i>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="javascript:void(0);" class="nav-link" data-link-to="consulting-services">
+										<div class="h3">Consulting Services</div>
+										<i class="icon-next"></i>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="javascript:void(0);" class="nav-link" data-link-to="training-assessment-programs">
+										<div class="h3">Training & Assessment Programs</div>
+										<i class="icon-next"></i>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="javascript:void(0);" class="nav-link" data-link-to="ergonomic-software">
+										<div class="h3">Ergonomics Software</div>
+										<i class="icon-next"></i>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="javascript:void(0);" class="nav-link" data-link-to="resources" >
+										<div class="h3">Resources</div>
+										<i class="icon-next"></i>
+									</a>
+								</li>
+							</ul>
+							<ul class="nav-3 sub-nav nav-list" data-link-from="humanscale-consulting">
+								<li class="mobile nav-item">
+									<a href="javascript:void(0);" class="back-link nav-link">
+										<i class="icon-back"></i>
+										<div class="h3">Back</div>
+									</a>
+								</li>
+								<li class="nav-item mobile">
+									<a href="javascript:void(0);" class="nav-link">
+										<div class="h3">Humanscale Consulting</div>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="/ergonomics/ergonomic-consulting-services" class="nav-link">
+										<div class="h3">About Humanscale Consulting</div>
+										<i class="icon-next"></i>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="/ergonomics/ergonomic-consulting-services/about-humanscale-consulting.cfm" class="nav-link">
+										<div class="h3">Our Team</div>
+										<i class="icon-next"></i>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="/ergonomics/ergonomic-consulting-services/global-reach.cfm" class="nav-link">
+										<div class="h3">Coverage Map</div>
+										<i class="icon-next"></i>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="https://careers-humanscale.icims.com/jobs/search?ss=1&searchKeyword=ergonomist" target="_blank" class="nav-link">
+										<div class="h3">Careers in Ergonomics</div>
+										<i class="icon-next"></i>
+									</a>
+								</li>
+							</ul>
+							<ul class="nav-3 sub-nav nav-list" data-link-from="consulting-services">
+								<li class="mobile nav-item">
+									<a href="javascript:void(0);" class="back-link nav-link">
+										<i class="icon-back"></i>
+										<div class="h3">Back</div>
+									</a>
+								</li>
+								<li class="nav-item mobile">
+									<a href="javascript:void(0);" class="nav-link">
+										<div class="h3">Consulting Services</div>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="/ergonomics/ergonomic-consulting-services/ergonomic-program-development-and-implementation.cfm" class="nav-link">
+										<div class="h3">Program Development & Implementation</div>
+										<i class="icon-next"></i>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="/ergonomics/ergonomic-consulting-services/risk-assessment.cfm" class="nav-link">
+										<div class="h3">Risk Assessment</div>
+										<i class="icon-next"></i>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="/ergonomics/ergonomic-consulting-services/workplace-design.cfm" class="nav-link">
+										<div class="h3">Workplace Design</div>
+										<i class="icon-next"></i>
+									</a>
+								</li>
+							</ul>
+							<ul class="nav-3 sub-nav nav-list" data-link-from="training-assessment-programs">
+								<li class="mobile nav-item">
+									<a href="javascript:void(0);" class="back-link nav-link">
+										<i class="icon-back"></i>
+										<div class="h3">Back</div>
+									</a>
+								</li>
+								<li class="mobile nav-item">
+									<a href="javascript:void(0);" class="nav-link">
+										<div class="h3">Training & Assessment Programs</div>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="/ergonomics/ergonomic-consulting-services/certification-programs-office-ergonomics.cfm" class="nav-link">
+										<div class="h3">Certification Courses in Office Ergonomics</div>
+										<i class="icon-next"></i>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="/ergonomics/ergonomic-resources/ergo101.cfm" class="nav-link">
+										<div class="h3">Ergonomics 101</div>
+										<i class="icon-next"></i>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="/ergonomics/ergonomic-consulting-services/certification-programs-office-ergonomics.cfm" class="nav-link">
+										<div class="h3">Train the Trainer</div>
+										<i class="icon-next"></i>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="/ergonomics/ergonomic-consulting-services/onsite-training-and-assessment.cfm" class="nav-link">
+										<div class="h3">Onsite Assessment Services</div>
+										<i class="icon-next"></i>
+									</a>
+								</li>
+							</ul>
+							<ul class="nav-3 sub-nav nav-list" data-link-from="ergonomic-software">
+								<li class="mobile nav-item">
+									<a href="javascript:void(0);" class="back-link nav-link">
+										<i class="icon-back"></i>
+										<div class="h3">Back</div>
+									</a>
+								</li>
+								<li class="mobile nav-item">
+									<a href="javascript:void(0);" class="nav-link">
+										<div class="h3">Ergonomics Software</div>
+									</a>
+								</li>
+								
+								
+									<li class="nav-item desktop">
+										<a href="javascript:void(0);" class="nav-link" style="cursor: default;">
+											<div class="h3" style="text-transform: none;"></div>
+											<i class="icon-next"></i>
+										</a>
+									</li>
+									<li class="nav-item desktop">
+										<a href="javascript:void(0);" class="nav-link" style="cursor: default;">
+											<div class="h3" style="text-transform: none;"></div>
+											<i class="icon-next"></i>
+										</a>
+									</li>
+									<li class="nav-item desktop">
+										<a href="javascript:void(0);" class="nav-link" style="cursor: default;">
+											<div class="h3" style="text-transform: none;"></div>
+											<i class="icon-next"></i>
+										</a>
+									</li>
+									<li class="nav-item desktop">
+										<a href="javascript:void(0);" class="nav-link" style="cursor: default;">
+											<div class="h3" style="text-transform: none;"></div>
+											<i class="icon-next"></i>
+										</a>
+									</li>
+									<li class="nav-item">
+										<a href="/products/product.cfm?group=ergoiq" class="nav-link">
+											<div class="h3" style="text-transform: none;">ergoIQ</div>
+											<i class="icon-next"></i>
+										</a>
+									</li>
+								
+							</ul>
+							<ul class="nav-3 sub-nav nav-list" data-link-from="resources">
+								<li class="mobile nav-item">
+									<a href="javascript:void(0);" class="back-link nav-link">
+										<i class="icon-back"></i>
+										<div class="h3">Back</div>
+									</a>
+								</li>
+								<li class="mobile nav-item">
+									<a href="javascript:void(0);" class="nav-link">
+										<div class="h3">Resources</div>
+									</a>
+								</li>
+								<li class="nav-item desktop">
+									<a href="javascript:void(0);" class="nav-link" style="cursor: default;">
+										<div class="h3" style="text-transform: none;"></div>
+										<i class="icon-next"></i>
+									</a>
+								</li>
+								<li class="nav-item desktop">
+									<a href="javascript:void(0);" class="nav-link" style="cursor: default;">
+										<div class="h3" style="text-transform: none;"></div>
+										<i class="icon-next"></i>
+									</a>
+								</li>
+								<li class="nav-item desktop">
+									<a href="javascript:void(0);" class="nav-link" style="cursor: default;">
+										<div class="h3" style="text-transform: none;"></div>
+										<i class="icon-next"></i>
+									</a>
+								</li>
+								<li class="nav-item desktop">
+									<a href="javascript:void(0);" class="nav-link" style="cursor: default;">
+										<div class="h3" style="text-transform: none;"></div>
+										<i class="icon-next"></i>
+									</a>
+								</li>
+								<li class="nav-item desktop">
+									<a href="javascript:void(0);" class="nav-link" style="cursor: default;">
+										<div class="h3" style="text-transform: none;"></div>
+										<i class="icon-next"></i>
+									</a>
+								</li>
+								<li class="nav-item desktop" style="padding-bottom: 14px;">
+									<a href="javascript:void(0);" class="nav-link" style="cursor: default;">
+										<div class="h3" style="text-transform: none;"></div>
+										<i class="icon-next"></i>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="/ergonomics/ergonomic-resources/white-papers.cfm" class="nav-link">
+										<div class="h3">Publications</div>
+										<i class="icon-next"></i>
+									</a>
+								</li>
+							</ul>
+
+
+							
+							
+							<div class="nav-misc">
+								<div class="misc-wrap">
+									
+									<div class="nav-img">
+										<a href="/ergonomics/ergonomic-consulting-services/certification-programs-office-ergonomics.cfm" >
+											<img alt="Ergonomic Seminars Calendar" src="/userFiles/images/homepage/nav_menu/ergo_seminars.jpg">
+										</a>
+										<div class="h3 caption"><a href="/ergonomics/ergonomic-consulting-services/certification-programs-office-ergonomics.cfm" >Ergonomic Seminars Calendar</a></div>
+									</div>
+									
+									<div class="nav-img">
+										<a href="https://careers-humanscale.icims.com/jobs/search?ss=1&searchKeyword=ergonomist" >
+											<img alt="Careers in Ergonomics" src="/userFiles/images/homepage/nav_menu/erog_careers.jpg">
+										</a>
+										<div class="h3 caption"><a href="https://careers-humanscale.icims.com/jobs/search?ss=1&searchKeyword=ergonomist" >Careers in Ergonomics</a></div>
+									</div>
+									
+								</div>
+							</div>
+							
+
+
+						</div>
+					</div>
+
+					<div class="nav nav-2 nav-wrapper" data-link-from="1-resources">
+						<div class="nav-holder">
+							<ul class="nav-list">
+								<li class="mobile nav-item">
+									<a href="javascript:void(0);" class="back-link nav-link">
+										<i class="icon-back"></i>
+										<div class="h3">Back</div>
+									</a>
+								</li>
+								<li class="mobile nav-item">
+									<a href="javascript:void(0);">
+										<div class="h3">Resources</div>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="/resources/designer-toolkit/" class="nav-link" data-link-to="designer-toolkit">
+										<div class="h3">Designer Toolkit</div>
+										<i class="icon-next"></i>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="/resources/download-library/" class="nav-link" data-link-to="download-library">
+										<div class="h3">Download Library</div>
+										<i class="icon-next"></i>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="/resources/watch-listen-learn/" class="nav-link" data-link-to="watch-listen-learn">
+										<div class="h3">Watch, Listen, & Learn</div>
+										<i class="icon-next"></i>
+									</a>
+								</li>
+							</ul>
+							<ul class="nav-3 sub-nav nav-list" data-link-from="designer-toolkit">
+								<li class="mobile nav-item">
+									<a href="javascript:void(0);" class="back-link nav-link">
+										<i class="icon-back"></i>
+										<div class="h3">Back</div>
+									</a>
+								</li>
+								<li class="mobile nav-item">
+									<a href="javascript:void(0);" class="nav-link">
+										<div class="h3">Designer Toolkit</div>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="/resources/designer-toolkit/design-files.cfm" class="nav-link">
+										<div class="h3">Design Files</div>
+										<i class="icon-next"></i>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="/resources/designer-toolkit/continuing-education.cfm" class="nav-link">
+										<div class="h3">Continuing Education</div>
+										<i class="icon-next"></i>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="/about/design-studio/textile-design/" class="nav-link">
+										<div class="h3">Textile Design</div>
+										<i class="icon-next"></i>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="/resources/designer-toolkit/green-design.cfm" class="nav-link">
+										<div class="h3">Green Design</div>
+										<i class="icon-next"></i>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="/resources/designer-toolkit/product-photography.cfm" class="nav-link">
+										<div class="h3">Product Photography</div>
+										<i class="icon-next"></i>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="/resources/designer-toolkit/inspiring-spaces.cfm" class="nav-link">
+										<div class="h3">Inspiring Spaces</div>
+										<i class="icon-next"></i>
+									</a>
+								</li>
+							</ul>
+							<ul class="nav-3 sub-nav nav-list" data-link-from="download-library">
+								<li class="mobile nav-item">
+									<a href="javascript:void(0);" class="back-link nav-link">
+										<i class="icon-back"></i>
+										<div class="h3">Back</div>
+									</a>
+								</li>
+								<li class="mobile nav-item">
+									<a href="/resources/download-library/" class="nav-link">
+										<div class="h3">Download Library</div>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="/resources/download-library/case-studies.cfm" class="nav-link">
+										<div class="h3">Case Studies</div>
+										<i class="icon-next"></i>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="/resources/download-library/manuals-installation-maintenance.cfm" class="nav-link">
+										<div class="h3">Manuals, Installation & Maintenance</div>
+										<i class="icon-next"></i>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="/resources/download-library/price-guides.cfm" class="nav-link">
+										<div class="h3">Price Guides</div>
+										<i class="icon-next"></i>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="/resources/download-library/industry-solutions.cfm" class="nav-link">
+										<div class="h3">Industry Solutions</div>
+										<i class="icon-next"></i>
+									</a>
+								</li>
+							</ul>
+							<ul class="nav-3 sub-nav nav-list" data-link-from="watch-listen-learn">
+								<li class="mobile nav-item">
+									<a href="javascript:void(0);" class="back-link nav-link">
+										<i class="icon-back"></i>
+										<div class="h3">Back</div>
+									</a>
+								</li>
+								<li class="mobile nav-item">
+									<a href="/resources/watch-listen-learn/" class="nav-link">
+										<div class="h3">Watch, Listen & Learn</div>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="/resources/watch-listen-learn/inside-humanscale.cfm" class="nav-link">
+										<div class="h3">Inside Humanscale</div>
+										<i class="icon-next"></i>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="/resources/watch-listen-learn/design-insight.cfm" class="nav-link">
+										<div class="h3">Design Insight</div>
+										<i class="icon-next"></i>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="/resources/watch-listen-learn/product-highlights.cfm" class="nav-link">
+										<div class="h3">Product Highlights</div>
+										<i class="icon-next"></i>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="/resources/watch-listen-learn/product-instructions.cfm" class="nav-link">
+										<div class="h3">Product Instructions</div>
+										<i class="icon-next"></i>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="/resources/watch-listen-learn/get-comfortable.cfm" class="nav-link">
+										<div class="h3">Get Comfortable</div>
+										<i class="icon-next"></i>
+									</a>
+								</li>
+
+							</ul>
+
+							
+							
+							<div class="nav-misc">
+								<div class="misc-wrap">
+									
+									<div class="nav-img">
+										<a href="/about/design-studio/" ><img alt="Humanscale Design Studio" src="/userFiles/images/homepage/nav_menu/designer.jpg"></a>
+										<div class="h3 caption"><a href="/about/design-studio/" >Humanscale Design Studio</a></div>
+									</div>
+									
+									<div class="nav-img">
+										<a href="/resources/designer-toolkit/" ><img alt="Designer Toolkit" src="/userFiles/images/homepage/nav_menu/designer_toolkit.jpg"></a>
+										<div class="h3 caption"><a href="/resources/designer-toolkit/" >Designer Toolkit</a></div>
+									</div>
+									
+								</div>
+							</div>
+													</div>
+					</div>
+
+
+					<div class="nav nav-2 nav-wrapper" data-link-from="healthcare">
+						<div class="nav-holder">
+							<ul class="nav-list">
+								<li class="mobile nav-item">
+									<a href="javascript:void(0);" class="back-link nav-link">
+										<i class="icon-back"></i>
+										<div class="h3">Back</div>
+									</a>
+								</li>
+								<li class="mobile nav-item">
+									<a href="/healthcare">
+										<div class="h3">Healthcare</div>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="/healthcare/products/index.cfm" class="nav-link" data-link-to="point-of-care-products">
+										<div class="h3">Point of Care Products</div>
+										<i class="icon-next"></i>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="/healthcare/healthcare-ergonomics/" class="nav-link" data-link-to="healthcare-ergonomics">
+										<div class="h3">Healthcare Ergonomics</div>
+										<i class="icon-next"></i>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="/healthcare/resources/" class="nav-link" data-link-to="healthcare-resources">
+										<div class="h3">Healthcare Resources</div>
+										<i class="icon-next"></i>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="/healthcare/reseller-portal/" class="nav-link" data-link-to="reseller-portal">
+										<div class="h3">Reseller Portal</div>
+										<i class="icon-next"></i>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="/healthcare/about-humanscale-healthcare/index.cfm" class="nav-link" data-link-to="about-humanscale-healthcare">
+										<div class="h3">About Humanscale Healthcare</div>
+										<i class="icon-next"></i>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="/healthcare/upcoming-healthcare-events/" class="nav-link" data-link-to="upcoming-healthcare-events">
+										<div class="h3">Upcoming Healthcare Events</div>
+										<i class="icon-next"></i>
+									</a>
+								</li>
+							</ul>
+							<ul class="nav-3 sub-nav nav-list" data-link-from="point-of-care-products">
+								<li class="mobile nav-item">
+									<a href="javascript:void(0);" class="back-link nav-link">
+										<i class="icon-back"></i>
+										<div class="h3">Back</div>
+									</a>
+								</li>
+								<li class="mobile nav-item">
+									<a href="javascript:void(0);" class="nav-link">
+										<div class="h3">Point of Care Products</div>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="/products/category_detail.cfm?category=viewpoint" class="nav-link">
+										<div class="h3">Wall Stations</div>
+										<i class="icon-next"></i>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="/products/category_detail.cfm?category=mobilecarts" class="nav-link">
+										<div class="h3">Mobile Carts</div>
+										<i class="icon-next"></i>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="/products/category_detail.cfm?category=healthpoint" class="nav-link">
+										<div class="h3">Technology Cabinets</div>
+										<i class="icon-next"></i>
+									</a>
+								</li>
+							</ul>
+							<ul class="nav-3 sub-nav nav-list" data-link-from="healthcare-ergonomics">
+								<li class="mobile nav-item">
+									<a href="javascript:void(0);" class="back-link nav-link">
+										<i class="icon-back"></i>
+										<div class="h3">Back</div>
+									</a>
+								</li>
+								<li class="mobile nav-item">
+									<a href="/healthcare/healthcare-ergonomics/" class="nav-link">
+										<div class="h3">Healthcare Ergonomics</div>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="/healthcare/healthcare-ergonomics/healthcare-consulting-services.cfm" class="nav-link">
+										<div class="h3">Healthcare Consulting Services</div>
+										<i class="icon-next"></i>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="/healthcare/healthcare-ergonomics/designing-healthy-work-environments.cfm" class="nav-link">
+										<div class="h3">Designing Healthy Work Environments</div>
+										<i class="icon-next"></i>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="/healthcare/healthcare-ergonomics/wall-stations-or-mobile-carts.cfm" class="nav-link">
+										<div class="h3">Evaluating Wall Stations & Mobile Carts</div>
+										<i class="icon-next"></i>
+									</a>
+								</li>
+							</ul>
+							<ul class="nav-3 sub-nav nav-list" data-link-from="healthcare-resources">
+								<li class="mobile nav-item">
+									<a href="javascript:void(0);" class="back-link nav-link">
+										<i class="icon-back"></i>
+										<div class="h3">Back</div>
+									</a>
+								</li>
+								<li class="mobile nav-item">
+									<a href="/healthcare/resources/" class="nav-link">
+										<div class="h3">Healthcare Resources</div>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="/healthcare/resources/healthcare-design-toolkit.cfm" class="nav-link">
+										<div class="h3">Healthcare Design Toolkit</div>
+										<i class="icon-next"></i>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="/healthcare/resources/white-papers-case-studies.cfm" class="nav-link">
+										<div class="h3">White Papers & Case Studies</div>
+										<i class="icon-next"></i>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="/healthcare/resources/manuals-diagrams.cfm" class="nav-link">
+										<div class="h3">Manuals & Diagrams</div>
+										<i class="icon-next"></i>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="/healthcare/resources/service-ticket.cfm" class="nav-link">
+										<div class="h3">Service Toolkit</div>
+										<i class="icon-next"></i>
+									</a>
+								</li>
+							</ul>
+							<ul class="nav-3 sub-nav nav-list" data-link-from="reseller-portal">
+								<li class="mobile nav-item">
+									<a href="javascript:void(0);" class="back-link nav-link">
+										<i class="icon-back"></i>
+										<div class="h3">Back</div>
+									</a>
+								</li>
+								<li class="mobile nav-item">
+									<a href="/healthcare/reseller-portal/" class="nav-link">
+										<div class="h3">Reseller Portal</div>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="/healthcare/reseller-portal/opportunity-inquiry.cfm" class="nav-link">
+										<div class="h3">Opportunity Inquiry Form</div>
+										<i class="icon-next"></i>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="/healthcare/reseller-portal/find-a-reseller.cfm" class="nav-link">
+										<div class="h3">Find a Reseller</div>
+										<i class="icon-next"></i>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="/healthcare/reseller-portal/find-a-humanscale-healthcare-rep.cfm" class="nav-link">
+										<div class="h3">Find a Humanscale Healthcare Representative</div>
+										<i class="icon-next"></i>
+									</a>
+								</li>
+							</ul>
+							<ul class="nav-3 sub-nav nav-list" data-link-from="about-humanscale-healthcare">
+								<li class="mobile nav-item">
+									<a href="javascript:void(0);" class="back-link nav-link">
+										<i class="icon-back"></i>
+										<div class="h3">Back</div>
+									</a>
+								</li>
+								<li class="mobile nav-item">
+									<a href="/healthcare/about-humanscale-healthcare/index.cfm" class="nav-link">
+										<div class="h3">About Humanscale Healthcare</div>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="/healthcare/about-humanscale-healthcare/solutions-for-healthcare-it.cfm" class="nav-link">
+										<div class="h3">Solutions for Healthcare IT</div>
+										<i class="icon-next"></i>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="/healthcare/about-humanscale-healthcare/caregiver-solutions.cfm" class="nav-link">
+										<div class="h3">Caregiver Solutions</div>
+										<i class="icon-next"></i>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="/healthcare/about-humanscale-healthcare/partners-testimonials.cfm" class="nav-link">
+										<div class="h3">Partners & Testimonials</div>
+										<i class="icon-next"></i>
+									</a>
+								</li>
+							</ul>
+							<ul class="nav-3 sub-nav nav-list" data-link-from="upcoming-healthcare-events">
+								<li class="mobile nav-item">
+									<a href="javascript:void(0);" class="back-link nav-link">
+										<i class="icon-back"></i>
+										<div class="h3">Back</div>
+									</a>
+								</li>
+								<li class="mobile nav-item">
+									<a href="/healthcare/upcoming-healthcare-events/" class="nav-link">
+										<div class="h3">Upcoming Healthcare Events</div>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="/healthcare/upcoming-healthcare-events/healthcare-tradeshows.cfm" class="nav-link">
+										<div class="h3">Healthcare Tradeshows</div>
+										<i class="icon-next"></i>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="/healthcare/upcoming-healthcare-events/continuing-education-healthcare-design.cfm" class="nav-link">
+										<div class="h3">Continuing Education for Healthcare</div>
+										<i class="icon-next"></i>
+									</a>
+								</li>
+							</ul>
+
+							
+								
+								<div class="nav-misc">
+									<div class="misc-wrap">
+										
+										<div class="nav-img">
+											<a href="/products/product.cfm?group=MedLink" ><img alt="Introducing MedLink™" src="/userFiles/images/homepage/nav_menu/medlink_3.jpg"></a>
+											<div class="h3 caption"><a href="/products/product.cfm?group=MedLink" >Introducing MedLink™</a></div>
+										</div>
+										
+										<div class="nav-img">
+											<a href="/healthcare/healthcare-ergonomics/wall-stations-or-mobile-carts.cfm" ><img alt="Evaluating Workstations" src="/userFiles/images/homepage/nav_menu/t7_cart.jpg"></a>
+											<div class="h3 caption"><a href="/healthcare/healthcare-ergonomics/wall-stations-or-mobile-carts.cfm" >Evaluating Workstations</a></div>
+										</div>
+										
+									</div>
+								</div>
+							
+						</div>
+					</div>
+
+					<div class="nav nav-2 nav-wrapper" data-link-from="about">
+						<div class="nav-holder">
+							<ul class="nav-list">
+								<li class="mobile nav-item">
+									<a href="javascript:void(0);" class="back-link nav-link">
+										<i class="icon-back"></i>
+										<div class="h3">Back</div>
+									</a>
+								</li>
+								<li class="mobile nav-item">
+									<a href="/about">
+										<div class="h3">About</div>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="/about/company-overview/" class="nav-link" data-link-to="company-overview">
+										<div class="h3">Company Overview</div>
+										<i class="icon-next"></i>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="/about/csr/" class="nav-link" data-link-to="corporate-social-responsibility">
+										<div class="h3">Corporate Social Responsibility</div>
+										<i class="icon-next"></i>
+									</a>
+								</li>
+
+								
+									<li class="nav-item">
+										<a href="/about/design-studio/" class="nav-link" data-link-to="design-studio">
+											<div class="h3">Design Studio</div>
+											<i class="icon-next"></i>
+										</a>
+									</li>
+									<li class="nav-item">
+										<a href="/about/where-to-buy/" class="nav-link" data-link-to="where-to-buy">
+											<div class="h3">Where To Buy</div>
+											<i class="icon-next"></i>
+										</a>
+									</li>
+									<li class="nav-item">
+										<a href="/about/contract-partners/" class="nav-link" data-link-to="contract-partners">
+											<div class="h3">Contract Partners</div>
+											<i class="icon-next"></i>
+										</a>
+									</li>
+								
+							</ul>
+							<ul class="nav-3 sub-nav nav-list" data-link-from="company-overview">
+								<li class="mobile nav-item">
+									<a href="javascript:void(0);" class="back-link nav-link">
+										<i class="icon-back"></i>
+										<div class="h3">Back</div>
+									</a>
+								</li>
+								<li class="mobile nav-item">
+									<a href="/about/company-overview/" class="nav-link">
+										<div class="h3">Company Overview</div>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="/about/company-overview/newsroom.cfm" class="nav-link">
+										<div class="h3">Newsroom</div>
+										<i class="icon-next"></i>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="/about/company-overview/mobile-apps.cfm" class="nav-link">
+										<div class="h3">Mobile Apps</div>
+										<i class="icon-next"></i>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="/about/company-overview/careers.cfm" class="nav-link">
+										<div class="h3">Careers</div>
+										<i class="icon-next"></i>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="/about/company-overview/locations.cfm" class="nav-link">
+										<div class="h3">Locations</div>
+										<i class="icon-next"></i>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="/about/company-overview/tradeshows.cfm" class="nav-link">
+										<div class="h3">Tradeshows</div>
+										<i class="icon-next"></i>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="/about/legal-information/index.cfm" class="nav-link">
+										<div class="h3">Legal</div>
+										<i class="icon-next"></i>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="/about/company-overview/contact-us.cfm" class="nav-link">
+										<div class="h3">Contact Us</div>
+										<i class="icon-next"></i>
+									</a>
+								</li>
+							</ul>
+							<ul class="nav-3 sub-nav nav-list" data-link-from="corporate-social-responsibility">
+								<li class="mobile nav-item">
+									<a href="javascript:void(0);" class="back-link nav-link">
+										<i class="icon-back"></i>
+										<div class="h3">Back</div>
+									</a>
+								</li>
+								<li class="mobile nav-item">
+									<a href="/about/csr/" class="nav-link">
+										<div class="h3">Corporate Social Responsibility</div>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="/about/csr/annual-report.cfm" class="nav-link">
+										<div class="h3">Annual Report</div>
+										<i class="icon-next"></i>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="/about/csr/environmental-sustainability.cfm" class="nav-link">
+										<div class="h3">Environmental Sustainability</div>
+										<i class="icon-next"></i>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="/about/csr/handprinting-overview.cfm" class="nav-link">
+										<div class="h3">Handprinting Overview</div>
+										<i class="icon-next"></i>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="/about/csr/health-product-declarations.cfm" class="nav-link">
+										<div class="h3">Health Product Declarations</div>
+										<i class="icon-next"></i>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="/about/csr/wildlife-conservation.cfm" class="nav-link">
+										<div class="h3">Wildlife Conservation</div>
+										<i class="icon-next"></i>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="/about/living-product-challenge" class="nav-link">
+										<div class="h3">Living Product Challenge</div>
+										<i class="icon-next"></i>
+									</a>
+								</li>
+							</ul>
+							<ul class="nav-3 sub-nav nav-list" data-link-from="design-studio">
+								<li class="mobile nav-item">
+									<a href="javascript:void(0);" class="back-link nav-link">
+										<i class="icon-back"></i>
+										<div class="h3">Back</div>
+									</a>
+								</li>
+								<li class="mobile nav-item">
+									<a href="/about/design-studio/" class="nav-link">
+										<div class="h3">Design Studio</div>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="/about/design-studio/humanscale-design-team.cfm" class="nav-link">
+										<div class="h3">Humanscale Design Team</div>
+										<i class="icon-next"></i>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="/about/design-studio/design-partnerships/" class="nav-link">
+										<div class="h3">Design Partnerships</div>
+										<i class="icon-next"></i>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="/about/design-studio/textile-design/" class="nav-link">
+										<div class="h3">Textile Design</div>
+										<i class="icon-next"></i>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="/about/company-overview/awards.cfm" class="nav-link">
+										<div class="h3">Awards</div>
+										<i class="icon-next"></i>
+									</a>
+								</li>
+							</ul>
+							<ul class="nav-3 sub-nav nav-list" data-link-from="where-to-buy">
+								<li class="mobile nav-item">
+									<a href="javascript:void(0);" class="back-link nav-link">
+										<i class="icon-back"></i>
+										<div class="h3">Back</div>
+									</a>
+								</li>
+								<li class="mobile nav-item">
+									<a href="/about/where-to-buy/" class="nav-link">
+										<div class="h3">Where to Buy</div>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="/about/where-to-buy/find-a-reseller.cfm" class="nav-link">
+										<div class="h3">Find a Reseller</div>
+										<i class="icon-next"></i>
+									</a>
+								</li>
+							</ul>
+							<ul class="nav-3 sub-nav nav-list" data-link-from="contract-partners">
+								<li class="mobile nav-item">
+									<a href="javascript:void(0);" class="back-link nav-link">
+										<i class="icon-back"></i>
+										<div class="h3">Back</div>
+									</a>
+								</li>
+								<li class="mobile nav-item">
+									<a href="/about/contract-partners/" class="nav-link">
+										<div class="h3">Contract Partners</div>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="/about/contract-partners/gsa-schedule.cfm" class="nav-link">
+										<div class="h3">GSA Schedule</div>
+										<i class="icon-next"></i>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="/about/contract-partners/dell-systems.cfm" class="nav-link">
+										<div class="h3">Dell Systems</div>
+										<i class="icon-next"></i>
+									</a>
+								</li>
+							</ul>
+
+
+							
+							
+							<div class="nav-misc">
+								<div class="misc-wrap">
+									
+									<div class="nav-img">
+										<a href="/about/where-to-buy/find-a-reseller.cfm" ><img alt="Find Reseller" src="/userFiles/images/homepage/nav_menu/find_reseller.jpg"></a>
+										<div class="h3 caption"><a href="/about/where-to-buy/find-a-reseller.cfm" >Find Reseller</a></div>
+									</div>
+									
+									<div class="nav-img">
+										<a href="/about/csr/wildlife-conservation.cfm" ><img alt="Humanscale and WWF" src="/userFiles/images/homepage/nav_menu/wwf.jpg"></a>
+										<div class="h3 caption"><a href="/about/csr/wildlife-conservation.cfm" >Humanscale and WWF</a></div>
+									</div>
+									
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+				<div class="nav-mini-dropdown-container">
+					<div class="search nav-mini-dropdown">
+						<div class="search-form-container">
+							<div class="exit-container">
+								<a href="javascript:void(0);" class="exit">
+									<i class="icon-uniF1CA"></i>
+								</a>
+							</div>
+							<form method="post" name="searchForm" action="/info/search.cfm" class="searchFormTop" id="searchFormTop">
+								<div class="mobile exit-button">
+									<a href="javascript:void(0);" class="exit">
+										<i class="icon-uniF1CA">
+										</i>
+									</a>
+								</div>
+								<div class="input-container">
+									<input name="keyword" type="text" class="searchTextTop placeholder">
+								</div>
+								<span class="search-submit-container">
+									<button class="search-submit" type="submit">
+										<span class="mobile">Search</span>
+										<i class="desktop icon-next">
+										</i>
+									</button>
+								</span>
+							</form>
+						</div>
+					</div>
+					<div class="global nav-mini-dropdown">
+						<div class="modal-table">
+							<div class="modal-table-row">
+								<div class="modal-table-cell">
+									<div class="modal modal-list">
+	
+
+	<form name="regionform" id="regionform" action="https://www.humanscale.com/index.cfm?setRegion=1&" method="post" style="display:inline;">
+	                     <input type="hidden" name="region_select" id="region_select" value="1" />
+	                    <input type="hidden" name="lang_select" id="lang_select" value="1" />
+    
+    </form>
+
+										<div class="modal-left">
+
+											<div class="h2">
+												NORTH AMERICA
+											</div>
+
+											<div class="modal-list-item selected">
+
+												<a href="javascript:void(0);" onclick="document.getElementById('region_select').value='1';document.getElementById('lang_select').value='1';regionform.submit();" class="modal-link">
+													<div class="h3">United States - <span>$USD</span></div>
+												</a>
+												<div class="cart-svg">
+													<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 512 512">
+													  <g>
+													    <g>
+													      <g>
+													        <g>
+													          <polygon points="311.2,365.5 63,365.5 11,126.7 250.7,126.7 250.7,146.5 36.5,146.5 79.9,345.7 296.3,345.7 416.2,11 501,11       501,31.9 431,31.9     "/>
+													        </g>
+													        <g>
+													          <g>
+													            <path d="m262.4,501c-29.7,0-54.1-24-54.1-54.2 0-30.2 24.4-54.2 54.1-54.2s54.1,24 54.1,54.2c0,30.2-24.4,54.2-54.1,54.2zm0-87.6c-19.1,0-33.9,15.6-33.9,33.4 0,18.8 14.8,33.4 33.9,33.4s33.9-15.6 33.9-33.4c5.68434e-14-18.8-15.9-33.4-33.9-33.4z"/>
+													          </g>
+													          <g>
+													            <path d="m108.6,501c-29.7,0-54.1-24-54.1-54.2 0-30.2 24.4-54.2 54.1-54.2s54.1,24 54.1,54.2c0,30.2-24.4,54.2-54.1,54.2zm0-87.6c-19.1,0-33.9,15.6-33.9,33.4 0,18.8 14.8,33.4 33.9,33.4s33.9-15.6 33.9-33.4c-1-18.8-15.9-33.4-33.9-33.4z"/>
+													          </g>
+													        </g>
+													      </g>
+													    </g>
+													  </g>
+													</svg>
+												</div>
+
+											</div>
+
+											<div class="modal-list-item">
+
+											
+												<a href="http://ca.humanscale.com/index.cfm?setRegion=1&" class="modal-link">
+											
+													<div class="h3">Canada - <span>$CAN</span></div>
+												</a>
+												<div class="cart-svg">
+													<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 512 512">
+													  <g>
+													    <g>
+													      <g>
+													        <g>
+													          <polygon points="311.2,365.5 63,365.5 11,126.7 250.7,126.7 250.7,146.5 36.5,146.5 79.9,345.7 296.3,345.7 416.2,11 501,11       501,31.9 431,31.9     "/>
+													        </g>
+													        <g>
+													          <g>
+													            <path d="m262.4,501c-29.7,0-54.1-24-54.1-54.2 0-30.2 24.4-54.2 54.1-54.2s54.1,24 54.1,54.2c0,30.2-24.4,54.2-54.1,54.2zm0-87.6c-19.1,0-33.9,15.6-33.9,33.4 0,18.8 14.8,33.4 33.9,33.4s33.9-15.6 33.9-33.4c5.68434e-14-18.8-15.9-33.4-33.9-33.4z"/>
+													          </g>
+													          <g>
+													            <path d="m108.6,501c-29.7,0-54.1-24-54.1-54.2 0-30.2 24.4-54.2 54.1-54.2s54.1,24 54.1,54.2c0,30.2-24.4,54.2-54.1,54.2zm0-87.6c-19.1,0-33.9,15.6-33.9,33.4 0,18.8 14.8,33.4 33.9,33.4s33.9-15.6 33.9-33.4c-1-18.8-15.9-33.4-33.9-33.4z"/>
+													          </g>
+													        </g>
+													      </g>
+													    </g>
+													  </g>
+													</svg>
+												</div>
+											</div>
+
+											<div class="h2">
+												EUROPE
+											</div>
+
+											<div class="modal-list-item">
+
+											
+												<a href="http://uk.humanscale.com/index.cfm?setRegion=1&" class="modal-link">
+													<div class="h3">United Kingdom - <span>&pound;GBP</span></div>
+												</a>
+											</div>
+
+											<div class="modal-list-item">
+
+												<a href="http://eu.humanscale.com/index.cfm?setRegion=1&" class="modal-link">
+													<div class="h3">Europe - <span>&euro;EUR</span></div>
+												</a>
+											</div>
+
+											<div class="modal-list-item">
+
+												<a href="http://fr.humanscale.com/index.cfm?setRegion=1&" class="modal-link">
+													<div class="h3">Fran&ccedil;ais - <span>&euro;EUR</span></div>
+												</a>
+											</div>
+
+											<div class="modal-list-item">
+
+												<a href="http://de.humanscale.com/index.cfm?setRegion=1&" class="modal-link">
+													<div class="h3">Deutsch - <span>&euro;EUR</span></div>
+												</a>
+											</div>
+
+											<div class="modal-list-item">
+
+												<a href="http://sp.humanscale.com/index.cfm?setRegion=1&" class="modal-link">
+													<div class="h3">Espa&ntilde;ol - <span>&euro;EUR</span></div>
+												</a>
+											</div>
+
+										</div>
+
+										<div class="modal-right">
+
+											<div class="h2">
+												ASIA
+											</div>
+
+											<div class="modal-list-item">
+
+												<a href="http://apac.humanscale.com/index.cfm?setRegion=1&" class="modal-link">
+													<div class="h3">Asia Pacific - <span>$USD</span></div>
+												</a>
+											</div>
+
+											<div class="modal-list-item">
+
+												
+												<a href="http://cn.humanscale.com/index.cfm?setRegion=1&" class="modal-link">
+												
+													<div class="h3">&#20013;&#25991;- <span>&yen;CNY</span></div>
+												</a>
+											</div>
+
+											<div class="h2 desktop">
+												MIDDLE EAST &amp; NORTH AFRICA
+											</div>
+											<div class="h2 mobile">
+												MIDDLE EAST &amp; NORTH AFRICA
+											</div>
+
+											<div class="modal-list-item">
+
+												<a href="http://mena.humanscale.com/index.cfm?setRegion=1&" class="modal-link">
+													<div class="h3">MENA - <span>$USD</span></div>
+												</a>
+											</div>
+
+											<div class="h2">
+												LATIN AMERICA
+											</div>
+
+											<div class="modal-list-item">
+
+												<a href="http://latam.humanscale.com/index.cfm?setRegion=1&" class="modal-link">
+													<div class="h3">America Lat&iacute;na - <span>$USD</span></div>
+												</a>
+											</div>
+
+											<div class="exit-container">
+												<a href="javascript:void(0);" class="exit">
+													<i class="icon-uniF1CA"></i>
+												</a>
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="account nav-mini-dropdown">
+						<div class="modal-table">
+							<div class="modal-table-row">
+								<div class="modal-table-cell">
+									<div class="modal account-details clearfix">
+										<div class="modal-left">
+											<div class="left clearfix">
+
+
+
+
+
+
+
+												<form class="sign-in" style="display:block" method="post"
+												
+												action="/index.cfm?"
+												>
+												
+
+													<div class="h3">
+												Sign in
+													</div>
+													<input class="username" placeholder="Email" name="username" type="text" />
+													<input class="password" placeholder="placeholder" name="password" type="password" />
+													<button class="submit" type="submit">
+														Sign in
+													</button>
+												</form>
+												<div class="sign-in" style="display:block">
+													<a href="/support/forgotPW.cfm">
+														Forgot your password
+													</a>
+												</div>
+												
+
+
+
+												<div class="account-region">
+													
+
+	
+		
+		<span class="region-name united-states">
+			
+			United States
+		
+		</span>
+
+	
+
+
+
+													<span href="javascript:void(0);" class="modal-link global">
+														<i class="flaticon-internet"></i>
+													</span>
+												</div>
+											</div>
+										</div>
+
+										
+											<div class="modal-right m-right-1">
+												<div class="right clearfix right-1">
+													<div class="register">
+														<div class="h3">
+															Create an Account
+														</div>
+														<a class="button" href="/support/register.cfm">
+															Register
+														</a>
+													</div>
+												</div>
+											</div>
+										
+										<div class="modal-right m-right-2">
+											<div class="right clearfix right-2"  id="refCodeSection">
+
+												
+
+												<form
+												id="refCodeForm" name="refCodeForm" action="" method="post" onSubmit="
+												    
+												    	submitRefCode2017();
+												    return false;">
+
+
+												    
+
+												<div class="no-refcode">
+													<div class="h3">
+														Have a Reference Code?
+													</div>
+													<span id="refCodeMsg"></span>
+
+														<input class="ref-code temp-placeholder" type="text" onfocus="this.placeholder = ''; this.value = '';" onblur="this.placeholder = 'e.g. 1234567'" placeholder="e.g. 1234567"
+														 id="refcode"
+														 name="refcode"
+														/>
+														<button class="submit" type="submit">
+															Enter
+														</button>
+
+												</div>
+
+												<div id="empRow" style="display:none">
+												<div class="no-empcode">
+													<div class="h3">
+														Enter Your <span id="codeNameDiv"></span>:
+													</div>
+
+														<input autocomplete="off" class="emp-id temp-placeholder" type="text" onfocus="this.placeholder = ''; this.value = '';" onblur="this.placeholder = 'e.g. 1234567'" placeholder=""
+														id="employeecode"
+														name="employeecode"
+														/>
+														<button class="submit" type="submit">
+															Enter
+														</button>
+
+												</div>
+												</div>
+												</form>
+											
+											</div>
+										</div>
+										<div class="exit-container">
+											<a href="javascript:void(0);" class="exit">
+												<i class="icon-uniF1CA"></i>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="ref-code nav-mini-dropdown">
+					</div>
+				</div>
+			</div>
+
+			
+
+
+		
+
+
+
+
+		<div class="body">
+			<div class="homepage-slideshow">
+				<div class="desktop homepage-slides slick">
+					
+
+					<div class="img-container">
+						<a href="/products/product.cfm?group=nova">
+							<div class="img">
+								<img src="/userFiles/images/homepage/new_grid/nova-slider.jpg" alt="Nova">
+							</div>
+						</a>
+					</div>
+					
+
+					<div class="img-container">
+						<a href="/products/product.cfm?group=quickstandeco">
+							<div class="img">
+								<img src="/userFiles/images/homepage/new_grid/quickstand_eco_portable_standing_desk.jpg" alt="QuickStand Eco">
+							</div>
+						</a>
+					</div>
+					
+
+					<div class="img-container">
+						<a href="/smartocean">
+							<div class="img">
+								<img src="/userFiles/images/landing/smart_ocean/landing_page_hero_1920x1080_2_ex2.jpg" alt="From Ocean to Office">
+							</div>
+						</a>
+					</div>
+					
+
+					<div class="img-container">
+						<a href="/products/product.cfm?group=trea">
+							<div class="img">
+								<img src="/userFiles/images/homepage/new_grid/trea_ergonomic_office_chair.jpg" alt="Trea">
+							</div>
+						</a>
+					</div>
+					
+				</div>
+				<div class="mobile homepage-slides slick">
+					
+					<a href="/products/product.cfm?group=nova">
+						<div class="img-container">
+							<div class="img">
+								<img src="/userFiles/images/homepage/new_grid/nova-slider-mobile.jpg" alt="Nova">
+							</div>
+						</div>
+					</a>
+					
+					<a href="/products/product.cfm?group=quickstandeco">
+						<div class="img-container">
+							<div class="img">
+								<img src="/userFiles/images/homepage/mobile/quickstand_eco_new.jpg" alt="QuickStand Eco">
+							</div>
+						</div>
+					</a>
+					
+					<a href="/smartocean">
+						<div class="img-container">
+							<div class="img">
+								<img src="/userFiles/images/landing/smart_ocean/Landing_Page_Hero_686x1200_mobile.jpg" alt="From Ocean to Office">
+							</div>
+						</div>
+					</a>
+					
+					<a href="/products/product.cfm?group=trea">
+						<div class="img-container">
+							<div class="img">
+								<img src="/userFiles/images/homepage/mobile/humanscale_trea.jpg" alt="Trea">
+							</div>
+						</div>
+					</a>
+					
+				</div>
+				<div class="gradient"></div>
+				<ul class="alt-slide-controls slick-dots">
+					
+
+					<li class="slick-active">
+						<button tabindex="0" aria-pressed="false">
+							1
+						</button>
+					</li>
+					
+
+					<li class="slick-active">
+						<button tabindex="1" aria-pressed="false">
+							2
+						</button>
+					</li>
+					
+
+					<li class="slick-active">
+						<button tabindex="2" aria-pressed="false">
+							3
+						</button>
+					</li>
+					
+
+					<li class="slick-active">
+						<button tabindex="3" aria-pressed="false">
+							4
+						</button>
+					</li>
+					
+				</ul>
+				<div class="slide-controls">
+					<div class="control-list">
+						
+						<a href="/products/product.cfm?group=nova" class="control ctrl-0" data-slide-link="0">
+							<div class="h5">NEW</div>
+							<div class="h2">Nova</div>
+							<div class="h3 arvo">Lighting the Future</div>
+						</a>
+						
+						<a href="/products/product.cfm?group=quickstandeco" class="control ctrl-0" data-slide-link="1">
+							<div class="h5">NEW</div>
+							<div class="h2">QuickStand Eco</div>
+							<div class="h3 arvo">Next Generation in Sit/Stand</div>
+						</a>
+						
+						<a href="/smartocean" class="control ctrl-0" data-slide-link="2">
+							<div class="h5">NEW</div>
+							<div class="h2">From Ocean to Office</div>
+							<div class="h3 arvo">Meet Smart Ocean, Our Most Sustainable Task Chair Yet</div>
+						</a>
+						
+						<a href="/products/product.cfm?group=trea" class="control ctrl-0" data-slide-link="3">
+							<div class="h5">RED DOT AWARD</div>
+							<div class="h2">Trea</div>
+							<div class="h3 arvo">Ergonomic Beauty</div>
+						</a>
+						
+
+						<div class="control-states">
+							<div class="ctrl-hover">
+							</div>
+							<div class="ctrl-active">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="grid-layout">
+				<div class="grid-table parallax-top">
+					<div class="grid-row header-row">
+						<div class="grid-cell whole">
+							<span class="grid-header whole">
+								<div class="h2">
+									Featured Stories
+								</div>
+							</span>
+						</div>
+					</div>
+					<div class="grid-row center-content">
+
+						
+						<div class="grid-cell half text-center grid-copy">
+							<a href="/userFiles/images/homepage/featured/Humanscale_Position_Paper_Material%20Transparency.pdf" target="_blank" class="img-container">
+								<img src="/userFiles/images/homepage/featured/transparency-whitepaper-featured-block.jpg" alt="Transparency: the Essential Ingredient to a Healthy Workplace" />
+							</a>
+							<div class="overlay-text">
+								<div class="text fade-in-text faded">
+									<div class="h4 overlap">
+										Download To Learn More
+									</div>
+									<div class="h3">
+										Transparency: the Essential Ingredient to a Healthy Workplace
+									</div>
+								</div>
+								<div class="overlay">
+								</div>
+							</div>
+						</div>
+						
+						<div class="grid-cell half text-center grid-copy">
+							<a href="/ces2019"  class="img-container">
+								<img src="/userFiles/images/homepage/featured/CES_landing_page_img_07.jpg" alt="Discover the freedom to work how you want, where you want." />
+							</a>
+							<div class="overlay-text">
+								<div class="text fade-in-text faded">
+									<div class="h4 overlap">
+										Consumer Electronics Show 2019
+									</div>
+									<div class="h3">
+										Discover the freedom to work how you want, where you want.
+									</div>
+								</div>
+								<div class="overlay">
+								</div>
+							</div>
+						</div>
+						
+					</div>
+					
+					<div class="grid-row center-content">
+						
+						<div class="grid-cell whole text-center grid-copy new-container">
+							<a href="https://blog.humanscale.com/5-steps-sustainable-workplace" target="_blank" class="img-container">
+								<img src="/userFiles/images/homepage/featured/sustainable_office.jpg" alt="Creating a More Sustainable Workspace" />
+							</a>
+							<div class="overlay-text">
+								<div class="text fade-in-text faded">
+									<div class="h2 overlap">
+										Creating a More Sustainable Workspace
+									</div>
+									<p>
+										From Our Blog
+									</p>
+								</div>
+								<div class="overlay">
+								</div>
+							</div>
+							
+						</div>
+						
+					</div>
+					
+				</div>
+				<div class="new-product-slideshow-wrapper tablet-up">
+					<div class="grid-table slide-thumb-table">
+						<div class="grid-row header-row">
+							<div class="grid-cell whole">
+								<span class="grid-header whole">
+									<div class="h2">
+										Our Products
+									</div>
+								</span>
+							</div>
+						</div>
+						<div class="grid-row slide-thumb-row">
+							<div class="grid-cell whole">
+								<div class="slide-thumbs">
+									<ul class="thumb-list">
+										
+										<li class="thumb-item" data-index="0">
+											<a href="/products/category_detail.cfm?category=seating" class="thumb-link">
+												<img src="/userFiles/images/homepage/line_icons/ergonomic-office-chairs-and-stools.svg" alt="Chairs & Stools" />
+											</a>
+										</li>
+										
+										<li class="thumb-item" data-index="1">
+											<a href="/products/category_detail.cfm?category=monitorarms" class="thumb-link">
+												<img src="/userFiles/images/homepage/line_icons/monitor-arms-and-integrated-docks.svg" alt="Monitor Arms & Integrated Docks" />
+											</a>
+										</li>
+										
+										<li class="thumb-item" data-index="2">
+											<a href="/products/category_detail.cfm?category=sitstand" class="thumb-link">
+												<img src="/userFiles/images/homepage/line_icons/standing-desks.svg" alt="Sit/Stand Solutions" />
+											</a>
+										</li>
+										
+										<li class="thumb-item" data-index="3">
+											<a href="/products/category_detail.cfm?category=lighting" class="thumb-link">
+												<img src="/userFiles/images/homepage/line_icons/office_lighting_products.svg" alt="Lighting" />
+											</a>
+										</li>
+										
+										<li class="thumb-item" data-index="4">
+											<a href="/products/category_detail.cfm?category=keyboard_systems" class="thumb-link">
+												<img src="/userFiles/images/homepage/line_icons/ergonomic_keyboard_systems.svg" alt="Keyboard Systems" />
+											</a>
+										</li>
+										
+								
+										<li class="thumb-item" data-index="5">
+											<a href="/products/category_detail.cfm?category=connectivity" class="thumb-link">
+												<img src="/userFiles/images/homepage/line_icons/office-technology-tools.svg" alt="Technology Tools" />
+											</a>
+										</li>
+
+								
+										<li class="thumb-item" data-index="6">
+											<a href="/products/category_detail.cfm?category=cable_management" class="thumb-link">
+												<img src="/userFiles/images/homepage/line_icons/computer-desk-wire-management-products.svg" alt="Cable Management" />
+											</a>
+										</li>
+
+								
+										<li class="thumb-item" data-index="7">
+											<a href="/products/ergonomic-tools.cfm" class="thumb-link">
+												<img src="/userFiles/images/homepage/line_icons/ergonomic-office-tools-and-accessories.svg" alt="Ergonomic Office Tools" />
+											</a>
+										</li>
+
+								
+
+									</ul>
+									<ul class="thumb-captions">
+										
+										<li class="thumb-caption" data-index="0">
+											<a href="javascript:void(0);" class="thumb-link">
+												<div class="h3">Chairs & Stools</div>
+											</a>
+										</li>
+										
+										<li class="thumb-caption" data-index="1">
+											<a href="javascript:void(0);" class="thumb-link">
+												<div class="h3">Monitor Arms & Integrated Docks</div>
+											</a>
+										</li>
+										
+										<li class="thumb-caption" data-index="2">
+											<a href="javascript:void(0);" class="thumb-link">
+												<div class="h3">Sit/Stand Solutions</div>
+											</a>
+										</li>
+										
+										<li class="thumb-caption" data-index="3">
+											<a href="javascript:void(0);" class="thumb-link">
+												<div class="h3">Lighting</div>
+											</a>
+										</li>
+										
+										<li class="thumb-caption" data-index="4">
+											<a href="javascript:void(0);" class="thumb-link">
+												<div class="h3">Keyboard Systems</div>
+											</a>
+										</li>
+										
+								
+										<li class="thumb-caption" data-index="5">
+											<a href="javascript:void(0);" class="thumb-link">
+												<div class="h3">Technology Tools</div>
+											</a>
+										</li>
+
+								
+										<li class="thumb-caption" data-index="6">
+											<a href="javascript:void(0);" class="thumb-link">
+												<div class="h3">Cable Management</div>
+											</a>
+										</li>
+
+								
+										<li class="thumb-caption" data-index="7">
+											<a href="javascript:void(0);" class="thumb-link">
+												<div class="h3">Ergonomic Office Tools</div>
+											</a>
+										</li>
+
+								
+									</ul>
+								</div>
+							</div>
+							<div class="products-slide-line grid-cell whole">
+								<div class="slide-line">
+									<div class="line">
+										<div class="line-body"></div>
+									</div>
+									<div class="slide">
+										<div class="slide-body"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="grid-table new-product-slideshow-container">
+						<div class="grid-row">
+							<div class="grid-cell whole">
+								<div class="new-product-slideshow">
+
+									
+
+									<a href='/products/category_detail.cfm?category=seating' class="grid-img">
+										<img src="/userFiles/images/homepage/new_grid/ergonomic_office_chairs.jpg" alt="Chairs & Stools" />
+										<div class="grid-caption">
+											<div class="grid-caption-content">
+
+												<div class="h3">
+													Chairs & Stools
+												</div>
+												<p>
+													Humanscale chairs replace heavy, complex mechanisms with the sitter&rsquo;s own body weight and the laws of physics to encourage movement and provide unparalleled comfort.
+												</p>
+												
+											</div>
+										</div>
+									</a>
+
+									
+
+									<a href='/products/category_detail.cfm?category=monitorarms' class="grid-img">
+										<img src="/userFiles/images/homepage/new_grid/ergonomic_monitor_arms.jpg" alt="Monitor Arms & Integrated Docks" />
+										<div class="grid-caption">
+											<div class="grid-caption-content">
+
+												<div class="h3">
+													Monitor Arms & Integrated Docks
+												</div>
+												<p>
+													Humanscale monitor arms offer ultimate stability and effortless functionality to instantly create a more dynamic workstation.
+												</p>
+												
+											</div>
+										</div>
+									</a>
+
+									
+
+									<a href='/products/category_detail.cfm?category=sitstand' class="grid-img">
+										<img src="/userFiles/images/homepage/new_grid/standing_desks.jpg" alt="Sit/Stand Solutions" />
+										<div class="grid-caption">
+											<div class="grid-caption-content">
+
+												<div class="h3">
+													Sit/Stand Solutions
+												</div>
+												<p>
+													Balanced movement is the key to wellness at work. Humanscale sit/stand products were designed to make changing postures throughout the day effortless.
+												</p>
+												
+											</div>
+										</div>
+									</a>
+
+									
+
+									<a href='/products/category_detail.cfm?category=lighting' class="grid-img">
+										<img src="/userFiles/images/homepage/new_grid/office_lighting.jpg" alt="Lighting" />
+										<div class="grid-caption">
+											<div class="grid-caption-content">
+
+												<div class="h3">
+													Lighting
+												</div>
+												<p>
+													Featuring sustainable design and advanced LED technology, Humanscale task lights reduce eye strain, improve reading comfort and reduce energy use and costs.
+												</p>
+												
+											</div>
+										</div>
+									</a>
+
+									
+
+									<a href='/products/category_detail.cfm?category=keyboard_systems' class="grid-img">
+										<img src="/userFiles/images/homepage/new_grid/ergonomic_keyboard.jpg" alt="Keyboard Systems" />
+										<div class="grid-caption">
+											<div class="grid-caption-content">
+
+												<div class="h3">
+													Keyboard Systems
+												</div>
+												<p>
+													Keyboard systems reduce hunched typing postures to maximize comfort and wellness at work.
+												</p>
+												
+											</div>
+										</div>
+									</a>
+
+									
+
+									
+
+									<a href='/products/category_detail.cfm?category=connectivity' class="grid-img">
+										<img src="/userFiles/images/homepage/new_grid/ergonomic_furniture_tech_tools.jpg" alt="Technology Tools" />
+										<div class="grid-caption">
+											<div class="grid-caption-content">
+												<div class="h3">
+													Technology Tools
+												</div>
+												<p>
+													Our range of technology-integrated tools were designed to adapt to the latest trends and support workers for years to come.
+												</p>
+												
+											</div>
+										</div>
+									</a>
+
+									
+
+									<a href='/products/category_detail.cfm?category=cable_management' class="grid-img">
+										<img src="/userFiles/images/homepage/new_grid/computer_desk_wire_management.jpg" alt="Cable Management" />
+										<div class="grid-caption">
+											<div class="grid-caption-content">
+												<div class="h3">
+													Cable Management
+												</div>
+												<p>
+													Cable management solutions promote a more organized workspace and keep under-desk areas neat and hazard-free.
+												</p>
+												
+											</div>
+										</div>
+									</a>
+
+									
+
+									<a href='/products/ergonomic-tools.cfm' class="grid-img">
+										<img src="/userFiles/images/homepage/new_grid/carousel_ergonomic_office_furniture_workstation.jpg" alt="Ergonomic Office Tools" />
+										<div class="grid-caption">
+											<div class="grid-caption-content">
+												<div class="h3">
+													Ergonomic Office Tools
+												</div>
+												<p>
+													Ergonomic work tools keep desks clutter-free and improve comfort in the workplace.
+												</p>
+												
+											</div>
+										</div>
+									</a>
+
+									
+
+
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="grid-layout mobile">
+					<div class="grid-table">
+						<div class="grid-row header-row">
+							<div class="grid-cell whole">
+								<span class="grid-header whole">
+									<div class="h2">
+										Our Products
+									</div>
+								</span>
+							</div>
+						</div>
+						<div class="mobile-product-thumbnail-captions">
+							
+							<div class="h3 active">Chairs & Stools</div>
+							
+							<div class="h3">Monitor Arms & Integrated Docks</div>
+							
+							<div class="h3">Sit/Stand Solutions</div>
+							
+							<div class="h3">Lighting</div>
+							
+							<div class="h3">Keyboard Systems</div>
+							
+							
+							<div class="h3">Technology Tools</div>
+							
+							<div class="h3">Cable Management</div>
+							
+							<div class="h3">Ergonomic Office Tools</div>
+							
+						</div>
+						<div class="mobile-product-slideshow-wrapper">
+							<div class="mobile-product-slideshow-container">
+								<div class="mobile-product-slideshow">
+
+									
+									<div class="product-slide">
+										<img src="/userFiles/images/homepage/nav_menu/menu_seating.jpg" />
+										<div class="h3">Chairs & Stools</div>
+										<div class="learn-more-container">
+											<a class="learn-more" href="/products/category_detail.cfm?category=seating">
+												See all models
+
+											</a>
+										</div>
+									</div>
+									
+									<div class="product-slide">
+										<img src="/userFiles/images/homepage/nav_menu/menu_monitor_armsg.jpg" />
+										<div class="h3">Monitor Arms & Integrated Docks</div>
+										<div class="learn-more-container">
+											<a class="learn-more" href="/products/category_detail.cfm?category=monitorarms">
+												See all models
+
+											</a>
+										</div>
+									</div>
+									
+									<div class="product-slide">
+										<img src="/userFiles/images/homepage/nav_menu/menu_sitstand.jpg" />
+										<div class="h3">Sit/Stand Solutions</div>
+										<div class="learn-more-container">
+											<a class="learn-more" href="/products/category_detail.cfm?category=sitstand">
+												See all models
+
+											</a>
+										</div>
+									</div>
+									
+									<div class="product-slide">
+										<img src="/userFiles/images/homepage/nav_menu/menu_lighting.jpg" />
+										<div class="h3">Lighting</div>
+										<div class="learn-more-container">
+											<a class="learn-more" href="/products/category_detail.cfm?category=lighting">
+												See all models
+
+											</a>
+										</div>
+									</div>
+									
+									<div class="product-slide">
+										<img src="/userFiles/images/homepage/nav_menu/menu_keyboards.jpg" />
+										<div class="h3">Keyboard Systems</div>
+										<div class="learn-more-container">
+											<a class="learn-more" href="/products/category_detail.cfm?category=keyboard_systems">
+												See all models
+
+											</a>
+										</div>
+									</div>
+									
+									
+									<div class="product-slide">
+										<img src="/userFiles/images/homepage/nav_menu/menu_technology.jpg" />
+										<div class="h3">Technology Tools</div>
+										<div class="learn-more-container">
+											<a class="learn-more" href="/products/category_detail.cfm?category=connectivity">
+												See all models
+											</a>
+										</div>
+									</div>
+									
+									<div class="product-slide">
+										<img src="/userFiles/images/homepage/nav_menu/menu_cable.jpg" />
+										<div class="h3">Cable Management</div>
+										<div class="learn-more-container">
+											<a class="learn-more" href="/products/category_detail.cfm?category=cable_management">
+												See all models
+											</a>
+										</div>
+									</div>
+									
+									<div class="product-slide">
+										<img src="/userFiles/images/homepage/nav_menu/menu_ergo2.jpg" />
+										<div class="h3">Ergonomic Office Tools</div>
+										<div class="learn-more-container">
+											<a class="learn-more" href="/products/ergonomic-tools.cfm">
+												See all models
+											</a>
+										</div>
+									</div>
+									
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="parallax-padding">
+				</div>
+
+
+
+
+				<div class="fullbleed video-fullbleed parallax-middle">
+					<div class="desktop html5video">
+						<a href="https://quickstand.humanscale.com/quickstand-eco.html">
+							<video autoplay loop muted playsinline webkit-playsinline>
+								<source src="https://s3.amazonaws.com/HumanscaleWeb/HS_abstract_cv6_compressed.mp4">
+								<!-- <source src="something.webm" onerror="HTML5VideoFallback( parentNode )"> -->
+								<img src="" />
+							</video>
+						</a>
+						<div class="video-cta-container tablet-video-cta" style="pointer-events: none; -webkit-pointer-events: none;">
+							<div class="video-cta">
+								<div class="video-linkout">
+									<div class="cta-copy">
+										<div class="copy">
+											<div class="h3">
+												QuickStand Eco
+											</div>
+											<p>
+												The Next Generation in Sit/Stand Solutions
+											</p>
+											<div class="learn-more-container" style="pointer-events: none; -webkit-pointer-events: none;">
+												<a class="learn-more" href="https://quickstand.humanscale.com/quickstand-eco.html">
+													Discover Now
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="mobile">
+						<a href="https://quickstand.humanscale.com/quickstand-eco.html">
+							<video class="for-html5video" autoplay loop muted playsinline webkit-playsinline>
+								<source src="https://s3.amazonaws.com/HumanscaleWeb/HS_abstract_cv6_compressed.mp4">
+								<img src="" />
+							</video>
+						</a>
+						<div class="video-cta-container mobile">
+							<div class="video-cta">
+								<div class="video-linkout">
+									<div class="cta-copy">
+										<div class="copy">
+											<div class="h3">
+												QuickStand Eco
+											</div>
+											<p>
+												The Next Generation in Sit/Stand Solutions
+											</p>
+											<div class="learn-more-container">
+												<a class="learn-more" href="https://quickstand.humanscale.com/quickstand-eco.html">
+													Discover Now
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="desktop video-cta-container" style="pointer-events: none; -webkit-pointer-events: none;">
+					<div class="video-cta">
+						<div class="video-linkout">
+							<div class="cta-copy">
+								<div class="copy">
+									<div class="h3">
+										QuickStand Eco
+									</div>
+									<p>
+										The Next Generation in Sit/Stand Solutions
+									</p>
+									<div class="learn-more-container" style="pointer-events: auto; -webkit-pointer-events: auto;">
+										<a class="learn-more" href="https://quickstand.humanscale.com/quickstand-eco.html">
+											Discover Now
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="grid-table has-grid-copy-left parallax-bottom">
+
+					
+					
+						<div class="hot-links grid-row middle-align">
+							<div class="grid-cell half">
+								<div class="grid-copy grid-copy-left">
+									<div class="h4">
+										Ergonomic Consulting Services
+									</div>
+									<div class="h3">
+										Developing Comprehensive Workplace Ergonomic Programs
+									</div>
+									<p>
+										Humanscale&rsquo;s consulting services help organizations improve employee health, reduce workplace injuries and lower associated costs.
+									</p>
+									<div class="learn-more-container">
+										<a class="learn-more" href="/ergonomics/">
+											LEARN MORE
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="grid-cell half fade-in faded">
+								<a href="/ergonomics/">
+									<img src="/userFiles/images/homepage/new_grid/ergo_consulting2.jpg" alt="Ergonomic Consulting Services" />
+								</a>
+							</div>
+						</div>
+					
+					
+					
+					<div class="hot-links grid-row middle-align">
+						<div class="grid-cell half fade-in faded">
+							<a href="/healthcare/index.cfm"><img src="/userFiles/images/homepage/new_grid/healthcare_3.jpg" alt="Healthcare Solutions" /></a>
+						</div>
+						<div class="grid-cell half">
+							<div class="grid-copy">
+								<div class="h4">
+									Healthcare Solutions
+								</div>
+								<div class="h3">
+									The Next Generation in Point-of-Care Solutions
+								</div>
+								<p>
+									Better care can be achieved through better design. Humanscale Healthcare creates products that maximize caregiver comfort and support healthcare-specific technology.
+								</p>
+								<div class="learn-more-container">
+									<a class="learn-more" href="/healthcare/index.cfm">
+										LEARN MORE
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					
+					
+
+					<div class="grid-row header-row">
+						<div class="grid-cell whole">
+							<span class="grid-header whole">
+								<div class="h2">
+									News
+								</div>
+							</span>
+						</div>
+					</div>
+					<div class="grid-row news-grid">
+
+
+
+						
+						<div class="grid-cell quarter">
+							
+							<a class="news-link" href="/about/company-overview/news.cfm?newsid=448">
+								<img src="/userFiles/images/press/t7-medlink_2-2.jpg" alt="Humanscale to Integrate its Mobile Technology Cart with BD Pyxis ES System" />
+							</a>
+							
+							<div class="h3 headline">
+								Humanscale to Integrate its Mobile Technology Cart with BD Pyxis ES System
+							</div>
+							<p class="date">
+								14 January 2019
+							</p>
+							<p class="description">
+								Simple and intuitive, new introductions create more adaptable, personalized workspaces.&nbsp;<a href="/about/company-overview/news.cfm?newsid=448" class="read-more">Read More</a>
+							</p>
+						</div>
+						
+						<div class="grid-cell quarter">
+							
+							<a class="news-link" href="/about/company-overview/news.cfm?newsid=447">
+								<img src="/userFiles/images/monitorarms/m8.1/hs_monitorarms_m81_installation07_3000pr.jpg" alt="Humanscale Relaunches Best-Selling Monitor Arm Line" />
+							</a>
+							
+							<div class="h3 headline">
+								Humanscale Relaunches Best-Selling Monitor Arm Line
+							</div>
+							<p class="date">
+								24 October 2018
+							</p>
+							<p class="description">
+								Simple and intuitive, new introductions create more adaptable, personalized workspaces.&nbsp;&nbsp;<a href="/about/company-overview/news.cfm?newsid=447" class="read-more">Read More</a>
+							</p>
+						</div>
+						
+						<div class="grid-cell quarter">
+							
+							<a class="news-link" href="/about/company-overview/news.cfm?newsid=446">
+								<img src="/userFiles/files/JaneCSOPressRelease.jpg" alt="Humanscale Appoints First Chief Sustainability Officer" />
+							</a>
+							
+							<div class="h3 headline">
+								Humanscale Appoints First Chief Sustainability Officer
+							</div>
+							<p class="date">
+								21 September 2018
+							</p>
+							<p class="description">
+								Jane Abernethy Promoted to Executive Level, Leading Brand into Its Next Chapter of Net Positive Manufacturing at a Global Scale&nbsp;<a href="/about/company-overview/news.cfm?newsid=446" class="read-more">Read More</a>
+							</p>
+						</div>
+						
+						<div class="grid-cell quarter">
+							
+							<a class="news-link" href="/about/company-overview/news.cfm?newsid=441">
+								<img src="/userFiles/images/homepage/new_grid/humanscale-launches-first-ever-task-chair-made-with-recycled-fishing-nets-homepage.jpg" alt="Humanscale Launches First-Ever Task Chair Made with Recycled Fishing Nets" />
+							</a>
+							
+							<div class="h3 headline">
+								Humanscale Launches First-Ever Task Chair Made with Recycled Fishing Nets
+							</div>
+							<p class="date">
+								4 April 2018
+							</p>
+							<p class="description">
+								Smart Ocean Task Chair Developed with Bureo Incorporates Almost 2lbs. of Plastic Pollution &amp; Marks First NextWave Product Available to Purchase&nbsp;<a href="/about/company-overview/news.cfm?newsid=441" class="read-more">Read More</a>
+							</p>
+						</div>
+						
+
+
+					</div>
+				</div>
+				<div class="fullbleed">
+					<div class="grid-table quote-slideshow-container">
+						<div class="grid-row middle-align grid-slideshow quote-slideshow">
+
+
+
+						
+								<div class="grid-cell whole">
+									<div class="grid-cell third">
+										<img class="circle" src="/userFiles/images/homepage/new_grid/Bob_King_01.jpg" alt="Bob King" />
+									</div>
+									<div class="grid-cell two-thirds">
+										<div class="h2 quote">
+											At Humanscale, our philosophy is centered around making a net positive impact on the Earth and our customers.
+										</div>
+										<p class="quoter">
+											Bob King
+										</p>
+										<p class="title">
+											Founder and CEO
+										</p>
+									</div>
+								</div>
+						 
+								<div class="grid-cell whole">
+									<div class="grid-cell third">
+										<img class="circle" src="/userFiles/images/homepage/new_grid/neils_diffrient_designer.jpg" alt="Niels Diffrient" />
+									</div>
+									<div class="grid-cell two-thirds">
+										<div class="h2 quote">
+											Why would you design something if it didn&#39;t improve the human condition?
+										</div>
+										<p class="quoter">
+											Niels Diffrient
+										</p>
+										<p class="title">
+											Industrial Designer, Godfather of Ergonomics and Humanscale collaborator
+										</p>
+									</div>
+								</div>
+						 
+								<div class="grid-cell whole">
+									<div class="grid-cell third">
+										<img class="circle" src="/userFiles/images/homepage/new_grid/todd_bracher.jpg" alt="Todd Bracher " />
+									</div>
+									<div class="grid-cell two-thirds">
+										<div class="h2 quote">
+											I believe beauty is a result of intuitively expressed function.
+										</div>
+										<p class="quoter">
+											Todd Bracher 
+										</p>
+										<p class="title">
+											Product Designer, Humanscale Collaborator
+										</p>
+									</div>
+								</div>
+						 
+						</div>
+					</div>
+				</div>
+				<div class="grid-table social">
+					<div class="grid-table">
+						<div class="grid-row">
+							<div class="grid-cell whole hashtagcell">
+								<div class="h2 hashtag">
+									#DesignForHumans
+								</div>
+							</div>
+							<div class="grid-cell whole">
+								<ul class="grid-social-list">
+									<li class="grid-social-item">
+										<a target="_blank" href="https://www.instagram.com/humanscalehq/" class="grid-social-link instagram">
+											<i class="icon-instagram"></i>
+										</a>
+									</li>
+									<li class="grid-social-item">
+										<a target="_blank" href="https://www.facebook.com/humanscale/" class="grid-social-link facebook">
+											<i class="icon-facebook2"></i>
+										</a>
+									</li>
+									<li class="grid-social-item">
+										<a target="_blank" href="https://twitter.com/humanscale/" class="grid-social-link twitter">
+											<i class="icon-twitter"></i>
+										</a>
+									</li>
+									<li class="grid-social-item">
+										<a target="_blank" href="https://www.linkedin.com/company/humanscale/" class="grid-social-link linkedin">
+											<i class="icon-linkedin"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="grid-row grid-slideshow instagram-slideshow middle-align">
+
+							
+
+								<a href="https://www.instagram.com/p/Brf2nYhgfU1/" target="_blank" class="grid-cell quarter">
+
+									<img src="https://scontent.cdninstagram.com/vp/1b9d4c8d6145d8595535706625f4c55e/5C964F57/t51.2885-15/sh0.08/e35/p640x640/47281871_331621500766814_74557466606030895_n.jpg?_nc_ht=scontent.cdninstagram.com" alt="How’s your Monday going? 
+#Repost @francis_lasaucisse with @get_repost
+···
+Just catching up on some emails before the weekend begins ?? #dachshundsofinstagram #minidachshund #sausagedog #sausagedogcentral" />
+
+									<div class="instagram-overlay">
+
+										<div class="instagram-overlay-container">
+
+											<div class="instagram-overlay-wrapper">
+
+												<span>
+
+													<i class="icon-heart"></i>
+
+													<i class="icon-heart-outlined"></i>
+
+												</span>
+
+												<span>
+
+													<div class="h3">
+
+														211 Likes
+
+													</div>
+
+												</span>
+
+											</div>
+
+										</div>
+
+									</div>
+
+								</a>
+
+							
+
+								<a href="https://www.instagram.com/p/BrV1oORAS8K/" target="_blank" class="grid-cell quarter">
+
+									<img src="https://scontent.cdninstagram.com/vp/5027ac923184d169d378261706c5d456/5CA075C2/t51.2885-15/sh0.08/e35/s640x640/47510982_320059982052712_8183887025249696542_n.jpg?_nc_ht=scontent.cdninstagram.com" alt="??Tis’ the season for comfort! ??" />
+
+									<div class="instagram-overlay">
+
+										<div class="instagram-overlay-container">
+
+											<div class="instagram-overlay-wrapper">
+
+												<span>
+
+													<i class="icon-heart"></i>
+
+													<i class="icon-heart-outlined"></i>
+
+												</span>
+
+												<span>
+
+													<div class="h3">
+
+														121 Likes
+
+													</div>
+
+												</span>
+
+											</div>
+
+										</div>
+
+									</div>
+
+								</a>
+
+							
+
+								<a href="https://www.instagram.com/p/BrQSD8ngDot/" target="_blank" class="grid-cell quarter">
+
+									<img src="https://scontent.cdninstagram.com/vp/1428c0516295e21538c2d0aa768ebece/5C96D5A8/t51.2885-15/sh0.08/e35/p640x640/46422158_322022071967725_2831237048341359871_n.jpg?_nc_ht=scontent.cdninstagram.com" alt="Searching for the perfect gift for your “hard to shop for” friend? Make their spirits (and workspace) bright with Horizon 2.0!?" />
+
+									<div class="instagram-overlay">
+
+										<div class="instagram-overlay-container">
+
+											<div class="instagram-overlay-wrapper">
+
+												<span>
+
+													<i class="icon-heart"></i>
+
+													<i class="icon-heart-outlined"></i>
+
+												</span>
+
+												<span>
+
+													<div class="h3">
+
+														125 Likes
+
+													</div>
+
+												</span>
+
+											</div>
+
+										</div>
+
+									</div>
+
+								</a>
+
+							
+
+								<a href="https://www.instagram.com/p/BrNxpSfAv96/" target="_blank" class="grid-cell quarter">
+
+									<img src="https://scontent.cdninstagram.com/vp/445ad8f30b6bb307c71787c3109eeb43/5C94CADB/t51.2885-15/sh0.08/e35/p640x640/46234632_343458883103521_6012175060639060548_n.jpg?_nc_ht=scontent.cdninstagram.com" alt="Make any workday merry and bright! Shop our Nova light and more ?" />
+
+									<div class="instagram-overlay">
+
+										<div class="instagram-overlay-container">
+
+											<div class="instagram-overlay-wrapper">
+
+												<span>
+
+													<i class="icon-heart"></i>
+
+													<i class="icon-heart-outlined"></i>
+
+												</span>
+
+												<span>
+
+													<div class="h3">
+
+														116 Likes
+
+													</div>
+
+												</span>
+
+											</div>
+
+										</div>
+
+									</div>
+
+								</a>
+
+							
+
+								<a href="https://www.instagram.com/p/BrF4y_nAk0y/" target="_blank" class="grid-cell quarter">
+
+									<img src="https://scontent.cdninstagram.com/vp/b5848daab479110c46b05925d83875f7/5C9CE104/t51.2885-15/sh0.08/e35/p640x640/45273966_125666231686881_2299234019065269905_n.jpg?_nc_ht=scontent.cdninstagram.com" alt="Whether you’re rockin’ around the Christmas ?? or rockin’ around the office, Humanscale’s Foot Rockers get feet moving for health and comfort. ??" />
+
+									<div class="instagram-overlay">
+
+										<div class="instagram-overlay-container">
+
+											<div class="instagram-overlay-wrapper">
+
+												<span>
+
+													<i class="icon-heart"></i>
+
+													<i class="icon-heart-outlined"></i>
+
+												</span>
+
+												<span>
+
+													<div class="h3">
+
+														155 Likes
+
+													</div>
+
+												</span>
+
+											</div>
+
+										</div>
+
+									</div>
+
+								</a>
+
+							
+
+								<a href="https://www.instagram.com/p/BrDTmO5gfq3/" target="_blank" class="grid-cell quarter">
+
+									<img src="https://scontent.cdninstagram.com/vp/13adaa9ea3139f2405311ac5ae8f23ef/5CD4ABF2/t51.2885-15/sh0.08/e35/p640x640/45524133_2093225070990400_4941049401449537758_n.jpg?_nc_ht=scontent.cdninstagram.com" alt="This holiday season, give your loved ones presents they didn’t even know they needed. Functional yet beautiful, Humanscale’s monitor Arms instantly improve the comfort, productivity and aesthetic of any office.
+Swipe ?? to see more!" />
+
+									<div class="instagram-overlay">
+
+										<div class="instagram-overlay-container">
+
+											<div class="instagram-overlay-wrapper">
+
+												<span>
+
+													<i class="icon-heart"></i>
+
+													<i class="icon-heart-outlined"></i>
+
+												</span>
+
+												<span>
+
+													<div class="h3">
+
+														199 Likes
+
+													</div>
+
+												</span>
+
+											</div>
+
+										</div>
+
+									</div>
+
+								</a>
+
+							
+
+								<a href="https://www.instagram.com/p/BrAt0mnAXHh/" target="_blank" class="grid-cell quarter">
+
+									<img src="https://scontent.cdninstagram.com/vp/f218cc08e1a88b062a2a9a0dde273c3d/5C9686F1/t51.2885-15/sh0.08/e35/s640x640/46268744_303353370520120_7739560346628265269_n.jpg?_nc_ht=scontent.cdninstagram.com" alt="Sit. Stand. Sip. ??
+Explore the height- adjustable QuickStand Eco and more in Humanscale’s #HolidayGiftGuide" />
+
+									<div class="instagram-overlay">
+
+										<div class="instagram-overlay-container">
+
+											<div class="instagram-overlay-wrapper">
+
+												<span>
+
+													<i class="icon-heart"></i>
+
+													<i class="icon-heart-outlined"></i>
+
+												</span>
+
+												<span>
+
+													<div class="h3">
+
+														243 Likes
+
+													</div>
+
+												</span>
+
+											</div>
+
+										</div>
+
+									</div>
+
+								</a>
+
+							
+
+								<a href="https://www.instagram.com/p/Bq-mz53AgmZ/" target="_blank" class="grid-cell quarter">
+
+									<img src="https://scontent.cdninstagram.com/vp/6ae79e291ffaff964d89857daca1b853/5CA4A1AF/t51.2885-15/sh0.08/e35/s640x640/46161492_2191616937744972_3711927876460745800_n.jpg?_nc_ht=scontent.cdninstagram.com" alt="The perfect addition to any standing workstation, Humanscale’s Monarch Mat makes any sit/stand workstation more comfortable. (Puppy not included!)??" />
+
+									<div class="instagram-overlay">
+
+										<div class="instagram-overlay-container">
+
+											<div class="instagram-overlay-wrapper">
+
+												<span>
+
+													<i class="icon-heart"></i>
+
+													<i class="icon-heart-outlined"></i>
+
+												</span>
+
+												<span>
+
+													<div class="h3">
+
+														154 Likes
+
+													</div>
+
+												</span>
+
+											</div>
+
+										</div>
+
+									</div>
+
+								</a>
+
+							
+
+								<a href="https://www.instagram.com/p/Bq7oDHcAlRM/" target="_blank" class="grid-cell quarter">
+
+									<img src="https://scontent.cdninstagram.com/vp/9dda29cfe42b012f147b3a9c0d7e14e4/5C9817A8/t51.2885-15/sh0.08/e35/p640x640/45280112_198080921135031_1307898819251421673_n.jpg?_nc_ht=scontent.cdninstagram.com" alt="Need a gift for the person who has everything? Humanscale’s Diffrient World chair is guaranteed to keep their workspace comfortable and stylish all season long and for years to come. Find Diffrient World and more in our 2018 Holiday Gift Guide ??" />
+
+									<div class="instagram-overlay">
+
+										<div class="instagram-overlay-container">
+
+											<div class="instagram-overlay-wrapper">
+
+												<span>
+
+													<i class="icon-heart"></i>
+
+													<i class="icon-heart-outlined"></i>
+
+												</span>
+
+												<span>
+
+													<div class="h3">
+
+														244 Likes
+
+													</div>
+
+												</span>
+
+											</div>
+
+										</div>
+
+									</div>
+
+								</a>
+
+							
+
+								<a href="https://www.instagram.com/p/Bq5N3iagmjv/" target="_blank" class="grid-cell quarter">
+
+									<img src="https://scontent.cdninstagram.com/vp/175a0fa714b719aec138d02574805e44/5C9ECF4F/t51.2885-15/sh0.08/e35/s640x640/46093422_2273996382883730_5575536400459821522_n.jpg?_nc_ht=scontent.cdninstagram.com" alt="Today marks the first day of Hannukah! May the Festival of Lights bring you happiness, comfort and joy. ??" />
+
+									<div class="instagram-overlay">
+
+										<div class="instagram-overlay-container">
+
+											<div class="instagram-overlay-wrapper">
+
+												<span>
+
+													<i class="icon-heart"></i>
+
+													<i class="icon-heart-outlined"></i>
+
+												</span>
+
+												<span>
+
+													<div class="h3">
+
+														121 Likes
+
+													</div>
+
+												</span>
+
+											</div>
+
+										</div>
+
+									</div>
+
+								</a>
+
+							
+
+								<a href="https://www.instagram.com/p/Bqz7Q6Qgh_Q/" target="_blank" class="grid-cell quarter">
+
+									<img src="https://scontent.cdninstagram.com/vp/17cec972e4cdc0cc20d382f37746f21b/5CD98B5B/t51.2885-15/sh0.08/e35/p640x640/46124197_1717304818381562_8308476348669255908_n.jpg?_nc_ht=scontent.cdninstagram.com" alt="Can’t gift a puppy this holiday season? ?? Our ultra-sleek and comfortable Liberty chair is the next best office addition. Click the link in our bio for Humanscale’s #HolidayGiftGuide" />
+
+									<div class="instagram-overlay">
+
+										<div class="instagram-overlay-container">
+
+											<div class="instagram-overlay-wrapper">
+
+												<span>
+
+													<i class="icon-heart"></i>
+
+													<i class="icon-heart-outlined"></i>
+
+												</span>
+
+												<span>
+
+													<div class="h3">
+
+														221 Likes
+
+													</div>
+
+												</span>
+
+											</div>
+
+										</div>
+
+									</div>
+
+								</a>
+
+							
+
+								<a href="https://www.instagram.com/p/BqpXs3pg1TR/" target="_blank" class="grid-cell quarter">
+
+									<img src="https://scontent.cdninstagram.com/vp/ea3833adf22b21295b5b7e7a3d89fdc1/5CA2E48E/t51.2885-15/sh0.08/e35/s640x640/44777167_1603944109706480_8586662710189305770_n.jpg?_nc_ht=scontent.cdninstagram.com" alt="Don't miss out on Humanscale's Cyber Monday Sale! Enjoy 15% off and Free Shipping* on featured items using the promo code CHEER. Shop our top gift ideas." />
+
+									<div class="instagram-overlay">
+
+										<div class="instagram-overlay-container">
+
+											<div class="instagram-overlay-wrapper">
+
+												<span>
+
+													<i class="icon-heart"></i>
+
+													<i class="icon-heart-outlined"></i>
+
+												</span>
+
+												<span>
+
+													<div class="h3">
+
+														197 Likes
+
+													</div>
+
+												</span>
+
+											</div>
+
+										</div>
+
+									</div>
+
+								</a>
+
+							
+
+						</div>
+
+						<div class="grid-row header-row">
+							<div class="grid-cell whole">
+								<span class="grid-header whole">
+									<div class="h2">
+										From our Blog
+									</div>
+								</span>
+							</div>
+						</div>
+						<div class="grid-row top-align text-bottom">
+							<a target="_blank" href="javascript:void(0);" class="grid-cell half article-insert article-hidden" data-article-index="0">
+								<img src="" />
+								<div class="grid-copy">
+									<div class="h3">
+										Es as ne etuscia audi revolur
+									</div>
+									<p>
+										Fugiatus expland itatur, officto dolupta ssitaquo omnimpo rehenti nverum delescipsum et eos soluptaquid esentis quis excerchit.
+									</p>
+									<div class="learn-more">
+										Read more
+									</div>
+								</div>
+							</a>
+							<a target="_blank" href="javascript:void(0);" class="grid-cell half article-insert article-hidden" data-article-index="1">
+								<img src="" />
+								<div class="grid-copy">
+									<div class="h3">
+										Es as ne etuscia audi revolur
+									</div>
+									<p>
+										Fugiatus expland itatur, officto dolupta ssitaquo omnimpo rehenti nverum delescipsum et eos soluptaquid esentis quis excerchit.
+									</p>
+									<div class="learn-more">
+										Read more
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="grid-row top-align text-bottom">
+							<a target="_blank" href="javascript:void(0);" class="grid-cell half article-insert article-hidden" data-article-index="2">
+								<img src="" />
+								<div class="grid-copy">
+									<div class="h3">
+										Es as ne etuscia audi revolur
+									</div>
+									<p>
+										Fugiatus expland itatur, officto dolupta ssitaquo omnimpo rehenti nverum delescipsum et eos soluptaquid esentis quis excerchit.
+									</p>
+									<div class="learn-more">
+										Read more
+									</div>
+								</div>
+							</a>
+							<div class="grid-cell half">
+								<div class="tweet">
+									<i class="icon-twitter"></i>
+									<div class="tweet-copy-slideshow">
+										<div class="tweet-copy">
+											<p class="tweet-date">@humanscale . August 8</p>
+											<p class="tweet-text">Lorem ipsum dolor sit amet, adhuc scripta has ei. Detraxit dissentiunt ut est. Fugit laboramus eu pri. Lorem ipsum dolor sit amet, adhuc be.</p>
+											<p class="tweet-tags">#HumanscaleErgoTips</p>
+										</div>
+										<div class="tweet-copy">
+											<p class="tweet-date">@humanscale . August 8</p>
+											<p class="tweet-text">Lorem ipsum dolor sit amet, adhuc scripta has ei. Detraxit dissentiunt ut est. Fugit laboramus eu pri. Lorem ipsum dolor sit amet, adhuc be.</p>
+											<p class="tweet-tags">#HumanscaleErgoTips</p>
+										</div>
+										<div class="tweet-copy">
+											<p class="tweet-date">@humanscale . August 8</p>
+											<p class="tweet-text">Lorem ipsum dolor sit amet, adhuc scripta has ei. Detraxit dissentiunt ut est. Fugit laboramus eu pri. Lorem ipsum dolor sit amet, adhuc be.</p>
+											<p class="tweet-tags">#HumanscaleErgoTips</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+
+
+
+
+
+<style>
+#PureChatWidget.purechat.purechat-attached.purechat-widget-expanded.purechat-bottom .purechat-content-wrapper,
+#PureChatWidget.purechat.purechat-attached.purechat-widget-expanded.purechat-bottom .purechat-widget-header,
+#PureChatWidget.purechat.purechat-attached.purechat-widget-expanded.purechat-bottom .purechat-footer {
+    border-radius: 0px !important;
+}
+#PureChatWidget.purechat .purechat-widget-header .purechat-btn .purechat-display-inline-block,
+#PureChatWidget.purechat .purechat-widget-header .purechat-btn.purechat-display-inline-block {
+    line-height: 10px !important;
+}
+#PureChatWidget.purechat .pc-svgicon-lg {
+    width: 15px !important;
+    height: 12px !important;
+}
+</style>
+
+
+
+
+	<div class="footer">
+
+	<div class="footer-wrapper">
+
+		<div class="footer-container">
+
+			<div class="footer-table">
+
+
+
+				<div class="footer-row two-cell">
+
+					<div class="footer-cell social-links">
+
+						<ul class="social-links-list">
+
+							<li class="social-link-item">
+								<a target="_blank" href="https://www.facebook.com/humanscale/" class="social-link facebook">
+									<i class="icon-facebook2"></i>
+								</a>
+							</li>
+							<li class="social-link-item">
+								<a target="_blank" href="https://twitter.com/humanscale" class="social-link twitter">
+									<i class="icon-twitter"></i>
+								</a>
+							</li>
+							<li class="social-link-item">
+								<a target="_blank" href="https://www.linkedin.com/company/humanscale" class="social-link linkedin">
+									<i class="icon-linkedin"></i>
+								</a>
+							</li>
+							<li class="social-link-item">
+								<a target="_blank" href="https://www.instagram.com/humanscalehq" class="social-link instagram">
+									<i class="icon-instagram"></i>
+								</a>
+							</li>
+							<li class="social-link-item">
+								<a target="_blank" href="https://blog.humanscale.com" class="social-link blog">
+									<i class="icon-rss2"></i>
+								</a>
+							</li>
+							<li class="social-link-item">
+								<a target="_blank" href="https://www.pinterest.com/humanscale" class="social-link pinterest">
+									<i class="icon-pinterest"></i>
+								</a>
+							</li>
+							<li class="social-link-item">
+								<a target="_blank" href="https://www.youtube.com/user/Humanscalevideo" class="social-link youtube">
+									<i class="icon-youtube"></i>
+								</a>
+							</li>
+							
+						</ul>
+					</div>
+
+					
+					<div class="footer-cell newsletter-row">
+						<div class="newsletter">
+
+							
+
+							
+
+								<form action="/index.cfm" class="searchForm" method="post">
+
+									
+			                        
+			                        <input name="emailsignup" autocomplete="off" onfocus="this.placeholder = ''; this.value = '';" onblur="this.placeholder = 'Sign up for our newsletter'" placeholder="Sign up for our newsletter" class="temp-placeholder signup-text placeholder" type="email">
+
+									<button class="signup-submit" type="submit">
+										<i class="icon-next"></i>
+									</button>
+
+			                        
+			                        
+
+	                			</form>
+							
+                			
+
+						</div>
+					</div>
+				 
+				</div>
+		
+
+
+
+
+
+				
+
+
+					<div class="footer-row link-row">
+
+						
+						 <div class="footer-cell">
+							<div class="h2 desktop footer-header">ERGONOMICS</div>
+
+							<div class="mobile">
+								<div class="h2 footer-header">
+									ERGONOMICS
+								</div>
+								<i class="icon-uniF100"></i>
+								<i class="icon-uniF243"></i>
+							</div>
+							<div class="links">
+								<ul class="links-list">
+	                            	<li class="link-item"><a class="link" href="/ergonomics/ergonomic-consulting-services.cfm">Ergonomic Consulting Services</a></li>
+	                            	<li class="link-item"><a class="link" href="/ergonomics/what-is-ergonomics.cfm">What is Ergonomics?</a></li>
+	                            	<li class="link-item"><a class="link" href="/ergonomics/ergonomic-resources/">Ergonomic Resources</a></li>
+								</ul>
+							</div>
+						</div>
+						
+
+						
+						<div class="footer-cell">
+							<div class="h2 desktop footer-header">RESOURCES</div>
+							<div class="mobile">
+								<div class="h2 footer-header">
+									RESOURCES
+								</div>
+								<i class="icon-uniF100"></i>
+								<i class="icon-uniF243"></i>
+							</div>
+							<div class="links">
+								<ul class="links-list">
+	                            	<li class="link-item"><a class="link" href="/resources/designer-toolkit/">Designer Toolkit</a></li>
+	                            	<li class="link-item"><a class="link" href="/resources/download-library/">Download Library</a></li>
+	                            	<li class="link-item"><a class="link" href="/resources/watch-listen-learn/">Watch, Listen & Learn</a></li>
+								</ul>
+							</div>
+						</div>
+						
+						
+						<div class="footer-cell">
+							<div class="h2 desktop footer-header">ABOUT</div>
+							<div class="mobile">
+								<div class="h2 footer-header">
+									ABOUT
+								</div>
+								<i class="icon-uniF100"></i>
+								<i class="icon-uniF243"></i>
+							</div>
+							<div class="links">
+								<ul class="links-list">
+	                            	
+	                            	<li class="link-item"><a class="link" href="/about/company-overview/">Company Overview</a></li>
+	                            	<li class="link-item"><a class="link" href="/about/csr/">Corporate Social Responsibility</a></li>
+	                            	<li class="link-item"><a class="link" href="/about/design-studio/">Design Studio</a></li>
+	                            	<li class="link-item"><a class="link" href="/about/where-to-buy/">Where To Buy</a></li>
+	                            	<li class="link-item"><a class="link" href="/about/contract-partners/">Contract Partners</a></li>
+
+				                    <li class="link-item"><a class="link" href="/about/company-overview/careers.cfm">Careers</a></li>
+				                    
+				                    <li class="link-item"><a href="/about/legal-information/index.cfm" class="link">Legal Information</a></li>
+
+											</ul>
+										</div>
+									</div>
+						
+									
+									<div class="footer-cell healthcare">
+										<div class="h2 desktop footer-header">HEALTHCARE</div>
+										<div class="mobile">
+											<div class="h2 footer-header">
+												HEALTHCARE
+											</div>
+											<i class="icon-uniF100"></i>
+											<i class="icon-uniF243"></i>
+										</div>
+										<div class="links">
+											<ul class="links-list">
+				                                <li class="link-item"><a class="link" href="/healthcare/healthcare-ergonomics/">Healthcare Ergonomics</a></li>
+				              				   <li class="link-item"><a class="link" href="/healthcare/resources/">Healthcare Resources</a></li>
+				                            	<li class="link-item"><a class="link" href="/healthcare/reseller-portal/">Reseller Portal</a></li>
+				                               <li class="link-item"><a class="link" href="/healthcare/about-humanscale-healthcare/index.cfm">About Humanscale Healthcare</a></li>
+				                            	<li class="link-item"><a class="link" href="/healthcare/upcoming-healthcare-events/">Upcoming Healthcare Events</a></li>
+											</ul>
+										</div>
+									</div>
+									
+
+								</div>
+
+								<div class="footer-row two-cell copyright-row">
+									<div class="desktop">
+										<div class="footer-cell copyright">
+											<span>
+
+												&#9400;
+
+												2019
+
+												Humanscale.
+
+												All Rights Reserved.
+
+											</span>
+
+											<div class="divider desktop">|</div>
+
+											<a href="/about/legal-information/terms-conditions.cfm">
+
+												Terms of Sale
+
+											</a>
+
+											<div class="divider desktop">|</div>
+
+											<a href="/about/legal-information/privacy-policy.cfm">
+
+												Privacy Policy
+
+											</a>
+
+											<div class="divider desktop">|</div>
+
+											<a href="/about/legal-information/opt-out.cfm">
+
+												Unsubscribe
+
+											</a>
+
+										</div>
+							
+						<div class="footer-cell region-cell">
+							<div class="region">
+								
+								<a href="javascript:void(0);" class="modal-link global">
+									
+
+	
+		
+		<div class="region-name united-states">
+			
+			United States
+		
+		</div>
+
+	
+
+
+									<i class="flaticon-internet">
+									</i>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="mobile">
+						<div class="copyright-cell">
+							<span class="terms"><a href="/about/legal-information/terms-conditions.cfm">Terms of Sale</a></span>
+							<span class="privacy"><a href="/about/legal-information/privacy-policy.cfm">Privacy Policy</a></span>
+							<span class="unsubscribe">
+								
+									<a href="/about/legal-information/opt-out.cfm">
+
+										Unsubscribe
+
+									</a>
+								
+							</span>
+						</div>
+						<div class="copyright-cell">
+							<div class="region">
+								<a href="javascript:void(0);" class="modal-link global">
+									
+
+	
+		
+		<div class="region-name united-states">
+			
+			United States
+		
+		</div>
+
+	
+
+
+									<i class="flaticon-internet">
+									</i>
+								</a>
+							</div>
+						</div>
+						<div class="copyright-row rights-reserved">
+							<span>&#9400; 2019 Humanscale. All Rights Reserved.</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="/js/nav.v3.js?v=1.1" type="text/javascript"></script>
+
+
+
+
+
+	<script async type="text/javascript">
+
+		function HTML5VideoFallback( video ) {
+			var img = video.querySelector( 'img' );
+			if ( img ) video.parentNode.replaceChild(img, video);
+		}
+	</script>
+
+	<script type="text/javascript" src="js/homepage.js?v=8"></script>
+
+
+
+<link rel="stylesheet" type="text/css" href="/css/privacy-warning.bundle.min.css" />
+
+<div class="privacy-warning-wrapper hidden-warning">
+
+	<div class="privacy-warning-container">
+
+		<div class="privacy-warning">
+
+			<p>
+
+				We use our own and third-party cookies to improve and customize your shopping experience. By using this website you consent to the use of cookies. Please <a class="privacy-click" href="/about/legal-information/privacy-policy.cfm">click here</a> for more information.
+
+			</p>
+
+			<a class="exit" href="javascript:void(0);" onclick="$( privacy-warning-wrapper ).css( 'display', 'none' );" href="javascript:void(0);">
+
+				<i class="icon-uniF1CA"></i>
+
+			</a>
+
+		</div>
+
+	</div>
+
+</div>
+
+<script src="/js/privacy-warning.bundle.min.js" type="text/javascript"></script>
+
+
+
+
+
+
+
+<div class="popupBg" id="popupBg"></div>
+
+<div class="popupBox" id="cartPopup"></div>
+
+<div class="popupBox" id="monitorPopup"></div>
+
+<div class="popupBox" id="videoPopup" style="position:fixed;">
+	<img src="/userfiles/images/structure/btn-close.gif" alt="" class="btnClose" onClick="
+	document.getElementById('videoBody').innerHTML='';
+	popupOpen2('videoPopup')" />
+	<div id="videoBody" style="height:420px"></div>
+</div>
+
+
+
+<div class="popupBox" id="specPopup">
+	<img src="/userfiles/images/structure/btn-close.gif" alt="" class="btnClose" onClick="popupOpen('specPopup')" />
+	<div id="specBody"></div>
+</div>
+
+<div class="popupBox" id="referencePopup">
+	<img src="/userfiles/images/structure/btn-close.gif" alt="" class="btnClose" onClick="popupOpen('referencePopup')" />
+	<div id="referenceBody"></div>
+</div>
+
+<div class="popupBox popupBoxAlt" id="moreInfoPopup">
+	<img src="/userfiles/images/structure/btn-close.gif" alt="" class="btnClose" onClick="popupOpen('moreInfoPopup')" />
+	<div id="moreInfoBody" style="max-height:200px;overflow:auto;"></div>
+</div>
+
+<div class="popupBox popupBoxAlt" id="moreInfoPopup2">
+	<img src="/userfiles/images/structure/btn-close.gif" alt="" class="btnClose" onClick="popupOpen('moreInfoPopup2')" />
+	<div id="moreInfoBody2" style="text-align:left;"></div>
+</div>
+
+
+<div class="popupBox" id="eventPopup">
+	<img src="/userfiles/images/structure/btn-close.gif" alt="" class="btnClose" onClick="popupOpen('eventPopup')" />
+	<div id="eventBody"></div>
+</div>
+
+
+
+							
+
+
+
+<div class="popupBox" id="loginPopup">
+	<img src="/userfiles/images/structure/btn-close.gif" alt="" class="btnClose" onClick="popupOpen('loginPopup')" />
+	<h3>Login</h3>
+    <p>
+    
+     <div class="formContent" style="margin:0 auto;">
+    <form name="loginForm" id="loginForm" method="post" action="/index.cfm?" style="margin-bottom:4px;">
+
+        <label>Email</label><br />
+        <input id="username" name="username" maxlength="50" type="text" class="formText" required="yes" message="Email is required" />
+		<label>Password</label><br />
+        <input id="password" name="password" maxlength="50" type="password" class="formText" required="yes" message="Password is required" />
+        <input type="submit" value="Log In" class="findSubmit" />
+
+						 <div class="clearAll" style="margin-bottom:12px;"></div>
+                         <a href="http://www.humanscale.com/support/forgotPw.cfm">Forgot Password &gt;</a><br />
+                         <a href="http://www.humanscale.com/support/register.cfm">Register for an Account &gt;</a><br />
+
+
+    </form>
+    </div>
+	
+    </p>
+</div>
+
+
+
+<!-- dynamic meta stuff -->
+
+    <div style="display:none;">
+        Humanscale | Ergonomic Office Furniture Solutions
+    </div>
+    
+        
+    
+    
+
+
+
+    <div style="display:none;">
+        
+    </div>
+    
+        
+    
+    
+
+
+
+    <div style="display:none;">
+        As the premier designer of ergonomic office furniture, our products improve health and comfort. Shop our award-winning office solutions, including standing desks. 
+    </div>
+    
+        
+    
+    
+
+<!-- end dynamic meta stuff -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script async src="https://tp.multiview.com/dpx.js?cid=12397&action=100&segment=humanstandsecure&m=1"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+		
+		
+	
+
+
+
+
+
+
+
+
+
+
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+<script type='text/javascript'>
+var _rejoiner = _rejoiner || [];
+_rejoiner.push(['setAccount', '57682afe5b3a4222918fdeab']);
+_rejoiner.push(['setDomain', '.humanscale.com']);
+(function() {
+    var s = document.createElement('script'); s.type = 'text/javascript';
+    s.async = true;
+    s.src = 'https://cdn.rejoiner.com/js/v4/rejoiner.lib.js';
+    var x = document.getElementsByTagName('script')[0];
+    x.parentNode.insertBefore(s, x);
+})();
+</script>
+
+
+
+
+
+
+
+
+	
+
+<!-- Adform Tracking Code BEGIN -->
+<script type="text/javascript">
+    window._adftrack = Array.isArray(window._adftrack) ? window._adftrack : (window._adftrack ? [window._adftrack] : []);
+    window._adftrack.push({
+        pm: 759334
+    });
+    (function () { var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = 'https://a2.adform.net/serving/scripts/trackpoint/async/'; var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x); })();
+
+</script>
+<noscript>
+    <p style="margin:0;padding:0;border:0;">
+        <img src="https://a2.adform.net/Serving/TrackPoint/?pm=759334" width="1" height="1" alt="" />
+    </p>
+</noscript>
+<!-- Adform Tracking Code END -->
+
+	
+
+	
+	
+	<img src='//pixel.mathtag.com/event/img?mt_id=994692&mt_adid=160243&v1=&v2=&v3=&s1=&s2=&s3=' width='1' height='1' style='margin-top: -1px; display: block;' />
+	
+
+
+
+
+
+<!-- Start of HubSpot Embed Code -->
+    <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/4592398.js"></script>
+    <!-- End of HubSpot Embed Code -->
+
+</script>
+
+</body>
+
+</html>
+ 
